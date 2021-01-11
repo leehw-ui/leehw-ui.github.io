@@ -1,0 +1,643 @@
+<html data-livestyle-extension="available"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0.5">
+<meta name="keywords" content="크리스몰,mall">
+<meta name="description" content="크리스몰,mall">
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+<meta name="keywords" content="크리스몰, creasmall">
+<meta property="og:type" content="website">
+<meta property="og:title" content="크리스몰,">
+<meta property="og:description" content="크리스몰,mall">
+
+
+
+<title>크리스몰</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/mobile/reset.css?16"> 
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"> 
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile/common.css?28">
+<link rel="stylesheet" type="text/css" href="../css/mobile/main.css?2020-04-30">
+<link rel="stylesheet" type="text/css" href="../css/mobile/sub.css?2020-07-19 13:36:26">
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="../js/lazyload.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/mobile/common.js?24" charset="utf-8"></script>
+ 
+<script src="../js/placeholder.js" charset="utf-8"></script>
+
+</head>
+<body>
+	<div class="loading">
+		<img src="../images/mobile/common/load/loading_icon.png" alt="loading">
+	</div>
+	<div class="wrap">
+    <form action="/m/user/j_spring_security_logout" method="post" id="logoutForm">
+        <input type="hidden" name="mode" value="muser">
+        <input type="hidden" name="" value="">
+    </form>
+
+<main class="sub order">
+	<div class="hdArea active">
+		<div class="hdBox">
+			<h2>주문/결제</h2>
+			<a href="#" class="imgBtn prePageBtn">뒤로가기</a>
+			<div class="hdMenu">
+				<a href="../main.html" class="imgBtn homeBtn">홈</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<!--카테고리-->
+		<div class="orderProcessWrap">
+			<div class="orderProcess">
+				<ul class="ProcessList ProcessList02">
+					<li>장바구니</li>
+					<li>주문/결제</li>
+					<li>주문완료</li>
+				</ul>
+			</div>
+		</div>
+		<!--// 카테고리-->
+
+		<!-- orderListWrap -->
+		<div class="orderListWrap">
+			<p class="prodInfoTit">주문상품 정보</p>
+			<div class="orderListInnerBox">
+				<div class="orderList">
+					<ul>
+						<li>
+							<!--prodThumbBox-->
+							<div class="prodThumbBox">
+								<div class="prodThumb">
+									<div class="prodImg">
+										<img src="../images/mobile/상품01_리스트썸네일_MO_240x279.jpg" alt="">
+									</div>
+									<div class="prodContBox">
+										<div class="prodCont">
+											<p class="prodTit">
+												<span class="brand">[Mikve]</span>
+												<span class="prodName">미크베 레이어 넥 코튼 트렌치 코트</span>
+											</p>
+											<p class="prodCode">상품코드 : <strong>GD0221RCAA</strong></p>
+											<p class="prodOption">색상 : 베이지 / 사이즈 : S / 수량 : 1개</p>
+											<div class="prodPriceBox">
+												<p class="prodPrice">
+													<span class="SalePrice">100,000원</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--//prodThumbBox-->
+						</li>
+						<li>
+							<!--prodThumbBox-->
+							<div class="prodThumbBox">
+								<div class="prodThumb">
+									<div class="prodImg">
+										<img src="../images/mobile/상품02_리스트썸네일_MO_240x279.jpg" alt="">
+									</div>
+									<div class="prodContBox">
+										<div class="prodCont">
+											<p class="prodTit">
+												<span class="brand">[Mikve]</span>
+												<span class="prodName">미크베 레이어 넥 코튼 트렌치 코트</span>
+											</p>
+											<p class="prodCode">상품코드 : <strong>GD0221RCAA</strong></p>
+											<p class="prodOption">옵션 : 펩타이드 아이크림 30ml / 수량 : 1개</p>
+											<div class="prodPriceBox">
+												<p class="prodPrice">
+													<span class="SalePrice">100,000원</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--//prodThumbBox-->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--//orderListWrap-->
+
+		<!--orderInfoBox-->
+		<div class="orderInfoBox">
+			<div class="titBox">
+				<h3 class="tit">주문자 및 배송지 정보</h3>
+				<p class="desc"><span class="essential">*</span>필수 입력 항목</p>
+			</div>
+			<div class="inputArea">
+				<div class="formWrap">
+					<div class="frow01 input">
+						<!--로그인 후, 주문 상태-->
+						<dl>
+							<dt>주문하시는분<span class="essential">*</span></dt>
+							<dd>홍길동</dd>
+						</dl>
+						<!--//로그인 후, 주문 상태-->
+						<!--비로그인일 때,-->
+						<!--<label for="">주문하시는분<span class="essential">*</span></label>
+<input type="text" placeholder="주문하시는 분 이름을 입력해 주세요.">-->
+						<!--//비로그인일 때,-->
+					</div>
+					<div class="frow01 input">
+						<label for="">연락처<span class="essential">*</span></label>
+						<div class="phoneNum">
+							<select>
+								<option value="010">010</option>
+								<option value="011">011</option> 
+							</select>
+							<span class="bar"></span>
+							<input type="text" placeholder="휴대폰 번호 (’-’없이 입력)">
+						</div>
+					</div>
+					<div class="frow01 input chkInput">
+						<label for="">받으시는분<span class="essential">*</span></label>
+						<input type="text" placeholder="이름을 입력해 주세요.">
+						<div class="checkbox02 small">
+							<input type="checkbox" id="" name="" class="checkbox"> 
+							<label for="">
+								<span></span>
+								<p>주문자와 동일</p>
+							</label>
+						</div>
+					</div>
+					<div class="frow01 input">
+						<label for="">연락처<span class="essential">*</span></label>
+						<div class="phoneNum">
+							<select>
+								<option value="010">010</option>
+								<option value="011">011</option> 
+							</select>
+							<span class="bar"></span>
+							<input type="text" placeholder="휴대폰 번호 (’-’없이 입력)">
+						</div>
+					</div>
+					<div class="frow01 delAddress">
+						<dl>
+							<dt>배송지 선택</dt>
+							<dd>
+								<a href="javascript:void(0);" class="btn white deliveryDefaultBtn">기본 배송지</a>
+								<a href="javascript:void(0);" class="btn white latelyBtn">최근 배송지</a>
+								<a href="javascript:void(0);" class="btn white deliveryListBtn">배송지 목록</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="frow01 input">
+						<div class="input addressBox">
+							<label for="">주소<span class="essential">*</span></label>
+							<div class="input address">
+								<input type="text" placeholder="">
+								<a href="#" class="btn gray01">우편번호 검색</a>
+							</div>
+							<div class="input">
+								<input type="text" placeholder="">
+							</div>
+							<div class="input">
+								<input type="text" placeholder="상세주소를 입력해 주세요.">
+							</div>
+						</div>
+						<div class="input addressBox">
+							<label for="">배송시요청사항</label>
+							<div class="select">
+								<select>
+									<option value="">배송 시 요청사항 선택해 주세요.</option>
+									<option value="">부재 시 휴대폰으로 연락 바랍니다.</option>
+									<option value="">부재 시 경비실에 맡겨주세요.</option>
+									<option value="">집 앞에 놓아주세요.</option>
+									<option value="">택배함에 넣어주세요.</option>
+									<option value="">직접 입력하기(글자제한 1,000 byte)</option>
+								</select>
+							</div>
+							<div class="textarea">
+								<textarea name="" id="" cols="30" rows="10" placeholder="배송 기사님에게 전달되는 메시지 입니다."></textarea>
+							</div>
+							<p class="txtCount"><span class="count">1</span>/1000byte</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//orderInfoBox-->
+
+		<!--paymentBox-->
+		<div class="paymentBox">
+			<div class="titBox">
+				<h3 class="tit">결제 정보</h3>
+			</div>
+			<div class="inputArea">
+				<div class="formWrap">
+					<div class="frow01 input">
+						<label for="">할인쿠폰</label>
+						<div class="select">
+							<select>
+								<option value="">사용 가능한 쿠폰을 선택해 주세요.</option>
+							</select>
+						</div>
+					</div>
+					<div class="frow01 input">
+						<label for="">적용쿠폰</label>
+						<div class="select">
+							<select>
+								<option value="">적용 가능한 쿠폰을 선택해 주세요.</option>
+							</select>
+						</div>
+					</div>
+					<div class="frow01 input">
+						<label for="">마일리지 <span class="discount">(<span class="tRed">10,000M</span> 보유)</span></label>
+						<div class="inputBtnBox">
+							<input type="text" placeholder="0 M">
+							<a href="#" class="btn gray01">전체 적용</a>
+						</div>
+						<p class="importTxt">보유하신 마일리지는 10M 단위로 사용가능합니다.<br />구매 확정 시 마일리지 1,000M 적립됩니다. </p>
+					</div>
+					<div class="frow01 input">
+						<label for="">적립금 <span class="discount">(<span class="tRed">10,000원</span> 보유)</span></label>
+						<div class="inputBtnBox">
+							<input type="text" placeholder="0 원">
+							<a href="#" class="btn gray01">전체 적용</a>
+						</div>
+						<p class="importTxt">보유하신 적립금은 10원 단위로 사용가능합니다.<br />구매 확정 시 적립금 1,000원 적립됩니다. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//paymentBox-->
+
+		<!--paymentWayWrap-->
+		<div class="paymentWayWrap">
+			<div class="paymentWay">
+				<div class="titBox">
+					<h3 class="tit">결제 수단</h3>
+				</div>
+				<div class="paymentWayList">
+					<ul>
+						<li><a href="javascript:void(0);">신용카드</a></li>
+						<li><a href="javascript:void(0);">가상계좌</a></li>
+						<li><a href="javascript:void(0);">카카오페이</a></li>
+						<li><a href="javascript:void(0);">네이버페이</a></li>
+						<li><a href="javascript:void(0);">페이코</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="paymentPrice">
+				<div class="titBox">
+					<h3 class="tit">결제 금액</h3>
+				</div>
+				<div class="priceList">
+					<ul class="prdPricelist01">
+						<li>
+							<dl>
+								<dt>주문수량</dt>
+								<dd><em>2</em>개</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>총 주문금액</dt>
+								<dd><em>202,500</em>원</dd>
+							</dl>
+							<ul class="prdPricelist02">
+								<li>
+									<dl>
+										<dt>상품금액</dt>
+										<dd><em>200,000</em>원</dd>
+									</dl>
+									<dl>
+										<dt>배송비
+											<a href="javascript:void(0);" class="imgbtn descQuickBtn">
+												<div class="descQuickBox">
+													<dl>
+														<dt>크리스 F&C</dt>
+														<dd>0원</dd>
+													</dl>
+													<dl>
+														<dt>입점몰</dt>
+														<dd>2,500원</dd>
+													</dl>
+												</div>
+											</a>
+										</dt>
+										<dd><em>2,500</em>원</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<dl>
+								<dt>총 할인금액</dt>
+								<dd><em>-8,000</em>원</dd>
+							</dl>
+							<ul class="prdPricelist02">
+								<li>
+									<dl>
+										<dt>할인쿠폰 금액</dt>
+										<dd><em>-5,000</em>원</dd>
+									</dl>
+									<dl>
+										<dt>상품쿠폰 사용</dt>
+										<dd><em>-1,000</em>원</dd>
+									</dl>
+									<dl>
+										<dt>마일리지 사용</dt>
+										<dd><em>-1,000</em>M</dd>
+									</dl>
+									<dl>
+										<dt>적립금 사용</dt>
+										<dd><em>-1,000</em>원</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="totalPrice">
+					<dl>
+						<dt>최종 결제금액</dt>
+						<dd>194,500원</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--//paymentWayWrap-->
+
+		<div class="box checkArea">
+			<div class="titBox">
+				<div class="checkbox02 allCheck">
+					<input type="checkbox" id="tearms_all" name="tearmsList" class="checkbox"> 
+					<label for="tearms_all"><span></span><p>주문자 전체 동의</p></label>
+				</div>
+			</div>
+			<div class="termsArea">
+				<ul class="termsList">
+					<li class="frow01">
+						<div class="checkbox02">
+							<input type="checkbox" id="tearms_01" name="tearmsList" class="checkbox"> 
+							<label for="tearms_01"><span></span><p> 구매 및 결제대행서비스 이용약관 등에 모두 동의합니다.<span class="tRed">(필수)</span></p></label>
+						</div>
+						<div class="descBox">
+							<div class="grayBox">
+								<p class="tit">구매조건 확인 및 결제 진행 동의</p>
+								<p class="txt">
+									구매조건 확인 및 결제 진행 동의주문할 상품의 상품명, 상품가격, 배송정보를 확인하였으며, 구매에 동의하시겠습니까?<br>(전자상거래법
+									제8조 제2항)
+								</p>
+							</div>
+						</div> 
+						<a href="javascript:;" class="imgBtn moreBtn">더보기</a>
+					</li>
+					<li class="frow01">
+						<div class="checkbox02">
+							<input type="checkbox" id="tearms_02" name="tearmsList" class="checkbox"> <label for="tearms_02"><span></span>
+							<p>개인정보 수집 이용 및 이용 동의</p></label>
+							<p>
+								크리스 F&amp;C 종합몰에서는 다음과 같이 귀하의 개인정보를 수집 및 이용하고자 합니다.<br>내용을
+								자세히 읽으신 후 동의 여부를 결정하여 주십시오.
+							</p>
+						</div>
+						<div class="descBox">
+							<table class="table01">
+								<colgroup>
+									<col width="30%">
+									<col width="70%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>항목</th>
+										<td><span class="tRed">(필수)</span>
+											<p>구매자 정보: 이름, 휴대폰, 결제카드정보</p>
+											<p>받는 사람 정보: 이름, 휴대폰, 주소</p></td>
+									</tr>
+									<tr>
+										<th>수집항목</th>
+										<td>
+											<p>구매 및 결제, 물풍배송, 금융거래 본인인증</p>
+										</td>
+									</tr>
+									<tr>
+										<th>보유기간</th>
+										<td>
+											<p>
+												계약 또는 청약철회, 대금 결제 및 재화 등의 <span class="tRed">공급에 관한 기록  5년</span>
+											</p>
+											<p class="tRed">소비자 불만 또는 분쟁처리에 관한 기록 3년</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div> <a href="javascript:;" class="imgBtn moreBtn">더보기</a>
+					</li>
+					<li class="frow01">
+						<div class="checkbox02">
+							<input type="checkbox" id="tearms_03" name="tearmsList" class="checkbox"> <label for="tearms_03"><span></span>
+							<p>개인정보 제3자 제공 동의</p></label>
+							<p>
+								크리스 F&amp;C 종합몰에서는 다음과 같이 귀하의 개인정보를 수집 및 이용하고자 합니다.<br>내용을
+								자세히 읽으신 후 동의 여부를 결정하여 주십시오.
+							</p>
+						</div>
+						<div class="descBox">
+							<table class="table01">
+								<colgroup>
+									<col width="30%">
+									<col width="70%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제공 받는 자</th>
+										<td>
+											<p>입점업체 업체명 출력</p>
+										</td>
+									</tr>
+									<tr>
+										<th>제공목적</th>
+										<td>
+											<p>상품배송, 반품, 환불, 고객상담 처리</p>
+										</td>
+									</tr>
+									<tr>
+										<th>제공하는 항목</th>
+										<td>
+											<p class="tRed">(필수)</p>
+											<p>구매자 정보 : 이름, 휴대폰, 결제카드정보</p>
+											<p>받는 사람 정보 : 이름, 휴대폰, 주소</p>
+										</td>
+									</tr>
+									<tr>
+										<th>보유기간</th>
+										<td>
+											<p>
+												계약 또는 청약철회, 대금 결제 및 재화 등의 <span class="tRed">공급에 관한 기록
+												5년</span>
+											</p>
+											<p class="tRed">소비자 불만 또는 분쟁처리에 관한 기록 3년</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div> <a href="javascript:;" class="imgBtn moreBtn">더보기</a>
+					</li>
+					<li class="frow01">
+						<div class="checkbox02">
+							<input type="checkbox" id="tearms_04" name="tearmsList" class="checkbox"> <label for="tearms_04"><span></span>
+							<p>결제대행 서비스 이용약관 동의</p></label>
+							<p>크리스 F&amp;C 종합몰에서는전자지급결제대행 서비스 및 결제대금 예치 서비스를 사용합니다.</p>
+						</div>
+					</li>
+				</ul>
+				<a href="/m/orderEnd" class="btn red">결제 하기</a>
+			</div>
+		</div>
+	</div>
+	<!--배송지 목록 deliveryListPopup :: start-->
+	<div class="popup02 deliveryListPopup">
+		<div class="popCont">
+			<h3>배송지목록</h3>
+			<div class="lineBox01">
+				<ul>
+					<li>
+						<div class="radio02">
+							<input type="radio" id="delivery01" name="delivery" class="checkbox">
+							<label for="delivery01"><span></span>회사</label><span class="flagBtn blue">기본배송지</span>
+						</div>
+						<div class="deliveryInfoBox">
+							<div class="deliveryAddress">
+								<p class="code">[06261]</p>
+								<p class="address">서울특별시 강남구 도곡로 176 크리스 빌딩 7층</p>
+							</div>
+							<div class="deliveryPeople">
+								<p class="name">홍길동</p>
+								<p class="phone">01012345678</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="radio02">
+							<input type="radio" id="delivery02" name="delivery" class="checkbox">
+							<label for="delivery02"><span></span>우리집</label>
+						</div>
+						<div class="deliveryInfoBox">
+							<div class="deliveryAddress">
+								<p class="code">[06261]</p>
+								<p class="address">서울특별시 강남구 도곡로 176 크리스 빌딩 7층</p>
+							</div>
+							<div class="deliveryPeople">
+								<p class="name">홍길동</p>
+								<p class="phone">01012345678</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="btnArea moreBox">
+				<a href="javascript:void(0);" class="btn gray02 moreBtn">더보기(10/100)</a>
+			</div>
+			<div class="btnBox fixed">
+				<a href="javascript:void(0);" class="btn black02 cancelBtn">취소</a>
+				<a href="javascript:void(0);" class="btn red">확인</a>
+			</div>
+			<a href="javascript:void(0);" class="imgBtn closeBtn"></a>
+		</div>
+	</div>
+	<!--배송지 목록 deliveryListPopup :: end-->
+</main>
+<script>
+	$(function(){    
+		//배송지 목록 버튼 클릭시, 배송지 목록 팝업 표출
+		$('.deliveryListBtn').click(function(){
+			popupScroll('deliveryListPopup');
+		});
+
+		$('.delAddress .btn').click(function(){
+			$(this).addClass('on').siblings().removeClass('on'); 
+		});
+
+		$('.deliveryListPopup .cancelBtn').click(function(){
+			popupScrollClose('deliveryListPopup');
+		});
+
+		$('.termsList .moreBtn').click(function(){
+			var target = $(this).parent().find('.descBox');
+			if(target.hasClass('on')){
+				target.removeClass('on');
+				$(this).removeClass('on');
+			}else{
+				target.addClass('on');
+				$(this).addClass('on');
+			}
+		});
+
+		/*주문자  전체 동의시,*/
+		$('.checkArea .allCheck input[type="checkbox"]').click(function(){
+			if($(this).prop('checked')){
+				$(this).parents('.checkArea').find('input[type="checkbox"]').prop('checked',true);
+				$(this).parents('.checkArea').find('input[type="checkbox"]').val('Y');
+			}else{
+				$(this).parents('.checkArea').find('input[type="checkbox"]').prop('checked',false);
+				$(this).parents('.checkArea').find('input[type="checkbox"]').val('N');
+			}
+		});
+
+		$('.paymentWayList ul li a').click(function(){
+			$(this).parent().addClass('on').siblings().removeClass('on'); 
+		});
+
+		//배송비 아이콘 클릭시,
+		$('.descQuickBtn').click(function(){
+			if($(this).find('.descQuickBox').css('display')=='block'){
+				$('.descQuickBox').fadeOut();
+			}else{
+				$('.descQuickBox').fadeIn();
+			}
+		});
+
+	});
+
+</script>
+
+
+    <div class="blacklayer"></div>
+    <a href="javascript:void(0);" class="imgBtn topBtn">top으로 이동</a>
+    <footer>
+    	<div class="fMenu">
+    		<ul>
+    			<li><a href="#">로그인</a></li>
+    			<li><a href="#">PC버전</a></li>
+    			<li><a href="#">고객센터</a></li>
+    			<li><a href="#">공지사항</a></li>
+    			<li><a href="#">기업회원가입</a></li>
+    		</ul>
+    	</div>
+    	<div class="fInfo">
+    		<p>
+    			<span>서울시 강남구 도곡로 176 크리스빌딩</span>크리스에프앤씨 대표이사 : 우진석<br>
+    			<span>고객센터 : 1544-6223</span>사업자 등록번호 : 207-81-52490<br>
+    			통신판매업신고 : 제2018-서울강남-01206호
+    		</p>
+    		<ul>
+    			<li><a href="#">이용약관</a></li>
+    			<li><a href="#">사업자 정보확인</a></li>
+    			<li><a href="#">개인정보 처리방침</a></li>
+    		</ul>
+    	</div>
+    	<div class="fSns">
+    		<ul>
+    			<li><a href="#" class="icon facebook">페이스북</a></li>
+    			<li><a href="#" class="icon insta">인스타</a></li>
+    			<li><a href="#" class="icon blog">블로그</a></li>
+    		</ul>
+    	</div>
+    </footer>
+    </div>
+
+    </body>
+
+</html>
