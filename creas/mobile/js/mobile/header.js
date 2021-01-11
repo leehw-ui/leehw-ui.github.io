@@ -1,5 +1,24 @@
 $(function(){
 	
+	//장바구니 카운트
+	/*
+	$.ajax({
+		type: 'get'
+		, url: getContextPath+"/m/cartCntAjax"
+		, dataType: "json"
+		, success: function(res){
+
+			if(res.isSucceed){
+				$(".cartCount").text(res.data);
+				return false;
+			}
+			
+		}, error:function(res){
+			alert('error\n\n' + res.responseText);
+		}
+	});
+	*/
+	
 	//scroll 시 레이아웃 변경되는 부분
 	var bandBannerH =  parseInt($('.bandBannerArea').innerHeight()); 
 	var scrollOffsetY = parseInt($('.menuArea').offset().top); 
