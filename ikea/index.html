@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html xml:lang="ko" lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Responsive WebDesign</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper_custom.js"></script>
+    <script src="js/size.js"></script>
+    <script src="js/video.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="skipNav">
+     <a href="#content">본문 바로가기</a>
+     <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+    <div id="wrap">
+        <div class="videoBox">
+            <video autoplay loop="100" muted id="videoBG">
+				 <source src="video/ikea_video.mp4" type="video/mp4">
+			</video>
+            <img src="images/index_img.jpeg" id="imgBG">
+            <a class="down" href="#">SCROLL DOWN</a>
+        </div>
+        <header id="headerArea">
+           <h2 class="hidden">글로벌 네비게이션 영역</h2>
+            <div class="headerInner">
+                <h1><a href="index.html">이케아 로고</a></h1>
+                <a href="#" class="menuOpen"><img src="images/menu.png" alt=""></a>
+                <ul id="gnb">
+                    <li><a href="sub1/sub1.html">BRAND</a></li>
+                    <li><a href="sub2/sub2.html">SERVICE</a></li>
+                    <li><a href="sub3/sub3.html">SHOWROOM</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <article id="content">
+           <h2 class="hidden">본문 콘텐츠 영역</h2>
+            <div class="idea">
+                <h2>
+                    <span>IKEA의 생각</span> 많은 사람들을 위해
+                </h2>
+                <p>IKEA의 컨셉은 소수의 사람들이 아니라 많은 사람들이 부담 없이 구입할 수 있는 홈퍼니싱 제품을 다양하게 제공하고 싶다는 생각 에서 출발합니다. 그래서 제품에 편리한 기능과 우수한 품질, 멋진 디자인 그리고 가치를 모두 담아내죠. 물론 지속 가능성도 항상 고 려하고 있습니다. IKEA의 컨셉은 IKEA의 비즈니스 모델에도 반영 되어, 디자인, 공급, 포장, 유통 등 IKEA 내부 구석 구석에 스며들 어 있습니다. 우리의 임무는 더 많은 사람들이 집에서 더 나은 생활 을 누리도록 돕는 것입니다.
+                </p>
+            </div>
+
+            <div class="story">
+                <div class="tabs">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h2>
+                    IKEA 제품을 만드는<br> 직원들의 이야기를 소개합니다
+                </h2>
+                <div class="btn">
+                    <a href="#" class="active"></a>
+                    <a href="#" class=""></a>
+                    <a href="#" class=""></a>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="content-slide">
+                                <div class="page1">
+                                    <p>Irina Sukhareva<strong>물류 센터 매니저 및 다양성 &amp; 포용 홍보대사,</strong>IKEA 러시아 물류</p>
+                                    <p>저는 2004년에 입사해 HR 부서에서 다양한 역할을 담당했어요. 2016년 1월부터는 물류 센터 매니저로 일하고 있습니다.우리의 역량을 가늠하고, 서로 협력해 성과를 이루어 내는 제 직업이 만 족스러워요. 서로의 의견에 귀 기울이기 시작할 때 우리는 변화하 며, 배우고 성장해 나갈 수 있는 것 같아요. 가장 큰 재산이죠.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide">
+                                <div class="page2">
+                                    <p>Sunny Wei<strong>DC/CDC 쑹장 지역 매니저,</strong>물류 서비스 공급</p>
+                                    <p>9년 전 아시아 태평양 지역 물류 서비스 부서의 공급 품질 팀 리더로 IKEA에 입사했어요. 이후 SQ 팀 리더, 제품 품질 팀 리더, 고객서비스 매니저 등 다양한 직책을 맡았죠. 지금은 상하이의 대중국 물류 서비스 공급 부서에서 DC/CDC 쑹장 지역 매니저 직책을 맡고 있어요. 여러 업무를 두루 경험해볼 수 있어서 많은 도움이 되었어요. 다양한 시각에서 고객 만족에 기여할 수 있는 방법을 터득하게 되었거든요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide">
+                                <div class="page3">
+                                    <p>Hector Bianchi<strong>프로젝트 컨트롤러,</strong>프로젝트 운영</p>
+                                    <p>미국에서 고객의 입장으로 처음 IKEA를 찾아갔다가 IKEA의 팬이 되었죠. 여자친구가 IKEA에서 일하게 되면서 스웨덴으로 이사를 했는데요. 저도 IKEA에서 일하고 싶어져서 몇 달 후부터 IKEA 커뮤니케이션에서 제품 커뮤니케이터로 일하기 시작했습니다. 미국에서는 웹디자인과 온라인 마케팅 일을 했었죠. 저는 심볼과 설명서, 패키지 관련 일을 담당했는데 그림만으로 커뮤니케이션을 시도하는 조립 설명서 작업이 특히 재미있었습니다. 우리는 언제나 누구나 더욱 쉽고 편하게 이해할 수 있는 컨텐츠를 만들기 위해 노력했죠. 그리고 프로젝트 운영에 참여하고 싶어서 IKEA 스웨덴의 제품군&amp;공급 부문을 찾아보기 시작했어요. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="showRoom">
+                <h2>SHOWROOM
+                    <span>IKEA제품으로 꾸며진 공간들에서 홈퍼니싱의 영감을 얻으세요</span></h2>
+
+                <div class="imgBox">
+                    <ul>
+                        <li class="living"><a href="#"><img src="images/livingroom.jpg" alt="거실"><span>거실보러가기 ></span></a></li>
+                        <li class="bedroom"> <a href="#"><img src="images/bedroom.jpg" alt="침실"><span>침실 ></span></a></li>
+                        <li class="bathroom"> <a href="#"><img src="images/bathroom.jpg" alt="욕실"><span>욕실 ></span></a></li>
+                        <li class="kitchen"><a href="#"><img src="images/kitchen.jpg" alt="주방"><span>주방 ></span></a></li>
+                        <li class="out"><a href="#"><img src="images/out.jpg" alt="야외"><span>야외 ></span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="collection">
+                <img src="images/collection1.jpg" alt="" class="coll_bg">
+                <div class="collection_ment">
+                <h2>IKEA 컬렉션</h2>
+                <p>IKEA에게 컬렉션이란 새로운 걸 알아가는 방법입니다.컬렉션을 통해 색다른 디자인 콜라보와 소재,양산 가능성을 테스트해보죠. 이런 과정을 항상 되풀이하는 것은 더 나은 제품을 만들겠다는 IKEA의 바람 때문이죠. 노력은 새로운 아이디어와 혁신을 이루며 더 좋은 생활을 위한 디자인으로 태어납니다. IKEA 매장에 오면 새로운 컬렉션을 자주 볼 수 있는데, 그건 바로 홈퍼니싱에 대한 우리의 끝없는 호기심을 말해 주죠. 컬렉션 제품들은 판매 기간이나 수량이 정해 져 있기도 하고 일부 매장에서만 판매하기도 하니 꼭 확인하세요. 지금부터 IKEA의 최신 컬렉션을 만나보세요!</p>
+                <p>
+                    최신 컬렉션을 만나보세요.
+                </p>
+                <span>지금 확인하기<a href="#"><img src="images/right_btn_b.png" alt="" class="btn"></a></span>
+                </div>
+                
+            </div>
+            <div class="guideBox">
+                <h2>매장가이드<span>IKEA 매장에서는 언제나 다양한 연령대와 취향에 맞춘 상품들이 준비되어 있습니다.</span></h2>
+                <ul>
+                    <li>
+                        <p><span>1.</span>쇼룸에서 <strong>여러 가지 물건을 골라보고 비교, 테스트</strong>해보세요.</p>
+                    </li>
+                    <li>
+                        <p><span>2.</span>마음에 드는 상품을 적고 매장 어디에서<strong>픽업할 수 있는지</strong> 알아보세요.</p>
+                    </li>
+                    <li>
+                        <p><span>3.</span>상품을 <strong>직접 픽업해 가세요.</strong></p>
+                    </li>
+                    <li>
+                        <p><span>4.</span>상품을 <strong>직접 집으로 갖고 가거나 배송 서비스를 저렴한 가격에 이용</strong>해 보세요</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <footer id="footerArea">
+            <p class="ikea">IKEA 코리아</p>
+            <address>주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점</address>
+            <p>사업자 등록번호 : 106-86-82871 사업자정보확인 | 대표자 : 안드레 슈미트갈 <br>통신판매업 신고 : 2018-경기광명-0209 TEL : 1670-4532 &copy; Inter IKEA Systems B.V. 1999 - 2018</p>
+        </footer>
+    </div>
+</body>
+
+</html>

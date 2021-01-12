@@ -1,0 +1,70 @@
+@font-face{
+	font-family:'NanumSquare';
+	src:url('../fonts/NanumSquareR.eot');
+	src:local('NanumSquareR'), 
+        url('../fonts/NanumSquareR.woff') format('woff'),
+        url('../fonts/NanumSquareR.ttf') format('truetype');
+}
+@font-face{
+	font-family:'NanumSquare';
+	src:url('../fonts/NanumSquareB.eot');
+	src:local('NanumSquareB'), 
+        url('../fonts/NanumSquareB.woff') format('woff'),
+        url('../fonts/NanumSquareB.ttf') format('truetype');
+    font-weight: bold;
+}
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+body {font-family:'나눔스퀘어','NanumSquare',돋움, Dotum;  font-size:16px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden {display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px; background: #fff; overflow: hidden;}
+/*skipNav*/
+#skipNav{position:relative;width:100%;overflow:hidden; z-index: 100;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:12px;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:10px 0; background:#f2f2f2;}
+
+
+/*헤더 영역*/
+#headerArea {width:100%; height:60px; background: #fff; position: fixed; z-index: 100;left:0; top: 0;}
+#headerArea .headerInner {overflow: hidden; position: relative;}
+#headerArea h1{float: left;}
+#headerArea h1 a {display: block; background:url(../images/logo.jpg) no-repeat;text-indent: -9999px; height:60px; width: 243px; background-size: 200px 60px;}
+#headerArea #gnb {float: right;}
+#headerArea  ul {overflow: hidden; font-size: 20px; font-weight: bold;}
+#headerArea  ul li{float: left; margin:15px 100px 0 0;}
+
+#headerArea .menuOpen {position: absolute;right:15px;top:10px; display: none;}
+#headerArea .menuOpen img {width:35px; height:35px;}
+@media screen and (max-width:1024px) {
+    #headerArea ul li {margin: 15px 50px 0 0 }
+}
+@media screen and (max-width:768px) {
+    #headerArea #gnb {float: none; background: #fff; display: none}
+    #headerArea .menuOpen{display: block}
+    #headerArea #gnb a{display: block; padding: 15px 0; transition: all .5s }
+    #headerArea #gnb a:hover{background: #ffcc33; color: #fff}
+    #headerArea h1{float: none;}
+    #headerArea  ul li{float: none; margin:0; text-align: center;}
+}
+/*푸터 영억*/
+
+#footerArea {text-align: center; background: #666; padding: 50px 0; color:#fff}
+#footerArea p.ikea{margin-bottom: 30px; font-size: 20px;}
+
+@media screen and (max-width:768px) {
+    #footerArea{font-size: 14px;}
+   #footerArea p.ikea{font-size: 14px}
+}

@@ -1,0 +1,257 @@
+/* 와이드 pc  */
+#wrap{overflow: hidden}
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+}
+#imgBG{
+	position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -90px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+    100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}
+#content .idea {margin:5% 0; overflow: hidden; padding-left:10%}
+#content h2{font-size: 48px;font-weight: bold;}
+#content .idea h2 {float: left; width:40%; margin-top:5%;}
+#content .idea span {display: block; font-size: 24px}
+#content .idea p {float: right;width: 40%;  margin:5% 10% 0 0}
+
+#content .story {height: 700px; color:#fff}
+#content .story h2{padding: 8% 10% 30px}
+#content .story .btn {margin:0 0 20px 10%}
+#content .story span {margin-right: 20px}
+#content .story p {margin: 20px 10%; width:35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;  /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+}
+#content .story p:nth-of-type(1) {font-size: 20px;}
+#content .story strong {display: block;}
+#content{}
+#content .story {position: relative;}
+#content .story h2,.btn {position: relative; z-index: 50}
+#content .story .btn {overflow: hidden;}
+#content .story .btn a{display: block; width:10px; height: 10px; border-radius: 5px; background: #fff; float: left; margin-right: 10px}
+#content .story .btn a.active {background: #fc3;}
+#content .tabs div{position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 700px;
+        }
+#content .tabs div.active:nth-child(1){
+    background:url(../images/person2.jpg) 95% no-repeat #151a22;
+    }
+#content .tabs div.active:nth-child(2){
+    background:url(../images/person3.png) 95% bottom no-repeat #1a1a12;
+    }
+#content .tabs div.active:nth-child(3){
+     background:url(../images/person.jpg) 95% no-repeat #1e1928;
+    
+    }
+
+
+#content .showRoom {margin-bottom: 6%}
+#content .showRoom h2{ text-align: center; padding:4% 0 3% }
+#content .showRoom span{display: block; font-size: 20px;}
+#content .showRoom .imgBox {margin: 30px 5% 0 }
+#content .showRoom img {width:100%}
+#content .imgBox li{position: relative;}
+#content .imgBox li span{position:absolute; right:8%; top:50%; color:#fff; background:rgba(0,0,0,.4); padding: 10px; border: 1px solid #fff;}
+#content .showRoom ul {overflow: hidden;}
+#content .showRoom li {float: left;}
+#content .showRoom .living { width:50%}
+#content .showRoom .bedroom,.bathroom,.kitchen,.out {width:25%}
+
+#content .collection {height: 500px; overflow: hidden; color:#000}
+#content .collection img.coll_bg {width: 50%; height: 500px; float: left; }
+#content .collection .collection_ment  {width: 40%; float: right; padding: 0 5%; background: #ffca00; height: 500px;}
+
+#content .collection h2 {padding-top: 50px}
+#content .collection p {padding: 30px 0; text-align: justify }
+#content .collection p:nth-of-type(2) {font-size: 20px; font-weight: bold;}
+#content .collection span {font-weight: normal;}
+#content .collection img.btn{width: 24px;height: 24px; margin-top:-3px; padding-left:10px}
+
+#content .guideBox {padding-top:4%; width:80%; margin: 0 10%}
+#content .guideBox h2{text-align: center}
+#content .guideBox span {display: block; font-size: 20px; font-weight: normal;}
+#content .guideBox ul {overflow: hidden; color:#fff; margin: 50px auto 100px; width:100%}
+#content .guideBox li {float: left;width:25%;text-align: center;height: 500px;}
+#content .guideBox li:nth-child(1) {background:url(../images/guide1.jpg) no-repeat;background-size:100%;}
+#content .guideBox li:nth-child(2) {background:url(../images/guide2.jpg) no-repeat;background-size:100%; }
+#content .guideBox li:nth-child(3) {background:url(../images/guide3.jpg) no-repeat;background-size:100%; }
+#content .guideBox li:nth-child(4) {background:url(../images/guide4.jpg) no-repeat;background-size:100%; }
+#content .guideBox li p {margin:90% 30px 0; font-weight: normal}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content h2{font-size: 3.5vw;}
+    #content .idea h2 span {font-size:2vw}
+    #content .guideBox h2 span {font-size: 2vw;}
+    #content .showRoom h2 span {font-size: 2vw;}
+    #content .story {height: 550px;}
+    #content .story h2 {padding: 4% 10% 30px}
+    #content .story p {width:50%}
+    #content .tabs div{position: absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height: 550px;
+            }
+    #content .tabs div.active:nth-child(1){
+        background:url(../images/person2.jpg) right bottom no-repeat #151a22;
+        background-size: 50%;}
+
+    #content .tabs div.active:nth-child(2){
+        background:url(../images/person3.png) right bottom no-repeat #1a1a12;
+        background-size: 40%;
+        }
+    #content .tabs div.active:nth-child(3){
+         background:url(../images/person.jpg) right bottom no-repeat #1e1928;
+        background-size: 60%;
+    }
+    #content .guideBox ul {margin: 50px auto }
+    #content .guideBox li {height: 400px;}
+    
+    #content .collection { position: relative; float: none;}
+    #content .collection img.coll_bg {width:100%; float: none; }
+    #content .collection .collection_ment{ position: absolute;left:5%; top:5%;
+        height: 440px;float: none; width:80%; background:rgba(255,255,255,.4);}
+    
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .guideBox li p{margin: 50% 20px 0}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  
+    #content .tabs div{position: absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height: 450px;
+            }
+    #content .tabs div.active:nth-child(1){
+        background:url(../images/person2.jpg) right bottom no-repeat #151a22;
+        background-size: 60%;
+
+        }
+    #content .tabs div.active:nth-child(2){
+        background:url(../images/person3.png) right bottom no-repeat #1a1a12;
+        background-size: 50%;
+        }
+    #content .tabs div.active:nth-child(3){
+         background:url(../images/person.jpg) right bottom no-repeat #1e1928;
+        background-size: 70%;
+    }
+    #content .idea {padding: 0;}
+    #content .idea h2 {float: none; width: 80%; margin: 5% 10%; text-align: center;}
+    #content .idea p {float: none; width: 80%;margin: 0 10%;text-align:center}
+    #content .story {height: 450px;}
+    #content .guideBox {width:90%; margin: 0 5%}
+    #content .guideBox li{height: 300px;}
+    #content .guideBox li {width:50%;background-size: 50%}
+    #content .guideBox li p {margin: 35% 30px 0}
+    #content .guideBox li p span {font-size: 30px; padding-bottom: 30px}
+    #content .collection h2 {padding-top: 20px}
+    #content .collection {height: 250px;} 
+    #content .collection img.coll_bg {height: 300px;}
+   #content .collection p {width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    padding: 10px 0; margin:5px 0
+    }
+    #content .story {height: 450px;}
+    #content .story p:nth-child(1) {font-size: 18px;}
+    #content .story p:nth-child(2) {display: none;}
+    
+    #content h2{font-size:24px}
+    #content .idea h2 span {font-size:18px}
+    #content .guideBox h2 span {font-size:18px}
+    #content .showRoom h2 span {font-size:18px;font-weight: normal;}
+    #content .story {height: 300px;}
+    #content .tabs div{height: 300px;}
+    #content .story h2 {padding: 4% 10% 30px}
+    
+    #content .showRoom .living {width:100%}
+    #content .showRoom .bedroom, .bathroom, .kitchen, .out {width:50%}
+    #content .showRoom  .kitchen, .out {width:50%}
+    #content .imgBox li span {font-size: 16px; padding: 5px}
+    
+    #content .story p {}
+    
+    #content .collection .collection_ment{  height: 200px}
+    #content .collection .collection_ment p:nth-child(2) {padding: 0}
+    #content .guideBox ul {margin-top:20px}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) 
+{
+    #content .guideBox li {float: none; width:100%;height: 130px}
+    #content .guideBox li:nth-child(1) {background:url(../images/guide1_1.jpg) no-repeat;background-size:cover}
+    #content .guideBox li:nth-child(2) {background:url(../images/guide2_1.jpg) no-repeat;background-size:cover; }
+    #content .guideBox li:nth-child(3) {background:url(../images/guide3_1.jpg) no-repeat;background-size:cover; }
+    #content .guideBox li:nth-child(4) {background:url(../images/guide4_1.jpg) no-repeat;background-size:cover; }
+    #content .guideBox li p {margin:0; padding: 20px }
+    #content .guideBox li p span {padding-bottom: 15px}
+    #content .showRoom .living {width:50%}
+    #content .showRoom .out{display: none;}
+    #content h2{font-size: 20px;}
+    #content .idea p{font-size: 14px;}
+    #content .story p:nth-child(1){font-size: 14px;}
+    #content .story strong{font-size: 16px;}
+    #content .story p:nth-child(2){font-size: 16px;}
+    #content .showRoom h2 span{font-size: 14px;}
+    #content .imgBox li span{font-size: 14px;}
+    #content .collection .collection_ment{font-size: 14px;}
+    #content .collection p:nth-of-type(2){font-size:14px;}
+    #content .collection img.btn {width:16px; height: 16px; margin: 0}
+    #content .guideBox h2 span{font-size: 14px;}
+    #content .guideBox li p span{font-size: 20px;}
+    #content .guideBox li p{font-size: 14px;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+    #content h2 {font-size: 18px;}
+    #content .story{}
+    #content .collection img.coll_bg{height: 250px;}
+}
+
+

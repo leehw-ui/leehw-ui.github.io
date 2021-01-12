@@ -1,0 +1,66 @@
+#wrap{overflow: hidden; width:100%}
+.main {background: url(../images/sub1_bg.jpg) center no-repeat; height: 800px;background-size: cover; background-attachment: fixed}
+
+#content .conceptArea {overflow: hidden;}
+#content h3{font-weight: bold; font-size:3.5vw;}
+#content h3 span {font-size: 2vw; font-weight: normal; display: block;}
+#content .conceptArea {width:90%; margin:0 5%}
+#content .conceptArea .conceptBox {width:35%; margin:5% 0; float: left; border: 4px solid #000; box-sizing: border-box; padding:3%}
+#content .conceptArea .conceptBox p{padding: 30px 0; font-size: 16px; text-align: justify}
+#content .conceptArea .conceptDesc {width:55%; margin:5% 0; float: right}
+#content .conceptArea .conceptDesc strong {display: block;font-size: 2vw;line-height: 1.5em}
+#content .conceptArea .conceptDesc p {margin-bottom: 30px; text-align: justify}
+#content .visionArea {background:url(../images/vision.jpg) center; height: 480px; background-size: cover; color:#fff; overflow: hidden; margin-bottom: 50px}
+#content .visionArea .visionBox {margin:8% 5%}
+#content .visionArea .visionBox p{margin: 50px 0; text-align: justify}
+#content .peoples {width:90%; margin:5%}
+#content .peoples h3{text-align: center; margin-bottom: 50px}
+#content .peoples ul{overflow: hidden;}
+#content .peoples li{float: left; width:30%; margin-right:3%}
+#content .peoples li:last-child{margin-right:0}
+#content .peoples li img{width:100%}
+#content .peoples dl {}
+#content .peoples dt {font-size:2vw;line-height: 1.2em; font-weight: bold;margin: 20px 0;height: 90px;}
+#content .peoples dd {text-align: justify}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .conceptArea .conceptBox {float: none; width:100%; padding:5% 8%; box-sizing: border-box}
+    #content .conceptArea .conceptDesc {float: none; width:100%}
+    #content .visionArea {height: 350px;}
+    #content .peoples {width:100%; margin:10% 0;box-sizing: border-box }
+    #content .visionArea .visionBox{margin: 5%}
+    #content .peoples li {width:33.33%; margin: 0;position: relative;}
+    #content .peoples dl {position: absolute; left:0; top:0; text-align: center; margin: 5%; color:#fff; background:rgba(0,0,0,0.2); height: 80%; padding:5%}
+    #content .peoples dt {height: 60px;margin: 10px 0}
+    #content .peoples dd{text-align: center; transition: all .8s ease-out}
+}
+@media screen and (max-width:768px) {
+    #content .conceptArea .conceptBox{padding: 5% 5% 0;}
+    #content .peoples dd {opacity: 0}
+    #content .peoples dt {margin: 40% 0}
+    #content h3 span {font-size: 3vw;}
+    #content .conceptArea .conceptDesc strong {font-size: 3vw;}
+    #content .peoples dl {width:80%;}
+    #content .visionArea .visionBox p{transition: all .7s ease-out}
+}
+@media screen and (max-width:480px) {
+    #wrap{min-width: 320px}
+    #content h3{font-size: 22px;}
+    #content h3 span{font-size:18px;}
+    #content .conceptArea .conceptDesc strong{font-size: 18px;}
+    #content .conceptArea .conceptBox{padding: 5% 5% 0;}
+    #content .peoples dd {opacity: 0}
+    #content .peoples li {width:100%; float: none;}
+    #content .peoples dt {margin: 40% 0}
+    #content .peoples dl {width:80%;}
+    #content .visionArea .visionBox{margin: 10%}
+    #content .visionArea .visionBox p{margin:40px 0;overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;  /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; }
+    #content .peoples dt{ font-size:24px;}
+    #content .conceptArea .conceptDesc{display: none;}
+}
