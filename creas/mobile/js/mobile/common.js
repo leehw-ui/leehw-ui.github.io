@@ -336,9 +336,7 @@ function popupScrollClose(className){
 //팝업 센터 정렬
 function popupCt(className){
 	var popup = $('.' + className); 
-
-	var top = (document.body.scrollTop + (document.body.clientHeight - $(".popup").height()) / 2 );
-	popup.css('top',top).show();
-	$('html,body').css('overflow','hidden');
+	
+	popup.show();
 	$('.blacklayer').css('height',$(window).height()).fadeIn(); 
 }

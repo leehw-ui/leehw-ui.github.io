@@ -8,9 +8,9 @@
 	<header class="header">
         <div class="hdArea">
             <div class="hdInnerWrap">
-                <h1 class="logo"><a href="/creasmall/html/mobile/main.asp">크리스몰</a></h1>
+                <h1 class="logo"><a href="/creasmall/html/mobile/main.html">크리스몰</a></h1>
                 <a href="#" class="btnSearch">검색</a>
-                <a href="/creasmall/html/mobile/order/cart.asp" class="btnCart">장바구니<span class="cartCount">0</span></a>
+                <a href="/creasmall/html/mobile/order/cart.html" class="btnCart">장바구니<span class="cartCount">0</span></a>
             </div>
         </div>
 	</header>

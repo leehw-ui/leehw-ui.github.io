@@ -3,8 +3,8 @@
 	<ul>
 		<li><a href="#" class="menu"><i></i><span class="hidden">전체보기</span></a></li>
 		<li><a href="#" class="brand"><i></i><span class="hidden">브랜드</span></a></li>
-		<li><a href="/creasmall/html/mobile/main.asp" class="home"><i></i><span class="hidden">홈</span></a></li>
-		<li><a href="/creasmall/html/mobile/mypage/mypage.asp" class="mypage"><i></i><span class="hidden">마이페이지</span></a></li>
+		<li><a href="/creasmall/html/mobile/main.html" class="home"><i></i><span class="hidden">홈</span></a></li>
+		<li><a href="/creasmall/html/mobile/mypage/mypage.html" class="mypage"><i></i><span class="hidden">마이페이지</span></a></li>
 		<li><a href="#" class="last"><i></i><span class="hidden">최근본상품</span></a></li>
 	</ul>
 </div>
@@ -12,7 +12,7 @@
 <div class="allmenu">
     <div class="allmenuInner">
         <div class="companyInfo">
-            <a href="/creasmall/html/mobile/main.asp" class="imgBtn logo">크리스몰</a>
+            <a href="/creasmall/html/mobile/main.html" class="imgBtn logo">크리스몰</a>
             <a href="javascript:void(0);" class="imgBtn closeBtn">닫기</a>
             <div class="appMenu">
             	<ul>
@@ -38,16 +38,16 @@
             <p class="tit">CATEGORY</p>
             <div class="cateInnerBox">
                 <ul class="depth01">
-                    <li><span class="moreBtn">GOLF</span><a href="/creasmall/html/mobile/product/productList.asp" class="goBtn"></a>
+                    <li><span class="moreBtn">GOLF</span><a href="/creasmall/html/mobile/product/productList.html" class="goBtn"></a>
                         <ul class="depth02">
                             <li><a href="javascript:void(0);" class="moreBtn">WOMEN</a>
                                 <ul class="depth03">
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">전체</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">티셔츠 </a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">니트/가디건</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">팬츠</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">스커트</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">아우터</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">전체</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">티셔츠 </a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">니트/가디건</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">팬츠</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">스커트</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">아우터</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0);">MEN</a></li>
@@ -55,14 +55,14 @@
                             <li><a href="javascript:void(0);">OUTLET</a></li>
                         </ul>
                     </li>
-                    <li><span class="moreBtn">FURNITURE</span><a href="/creasmall/html/mobile/product/productList.asp" class="goBtn"></a>
+                    <li><span class="moreBtn">FURNITURE</span><a href="/creasmall/html/mobile/product/productList.html" class="goBtn"></a>
                         <ul class="depth02">
                             <li><a href="javascript:void(0);" class="moreBtn">수입침구</a>
                                 <ul class="depth03">
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">전체</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">침실가구 </a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">거실가구</a></li>
-                                    <li><a href="/creasmall/html/mobile/product/productDepthList.asp">주방가구</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">전체</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">침실가구 </a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">거실가구</a></li>
+                                    <li><a href="/creasmall/html/mobile/product/productDepthList.html">주방가구</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0);">국내침구</a></li>
@@ -70,12 +70,12 @@
                             <li><a href="javascript:void(0);">쿠션/러그</a></li>
                         </ul>
                     </li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">WOMEN</a></li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">MEN</a></li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">BAG&ACC</a></li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">SHOES</a></li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">BRAND</a></li>
-                    <li><a href="/creasmall/html/mobile/product/productList.asp">OUTLET</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">WOMEN</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">MEN</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">BAG&ACC</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">SHOES</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">BRAND</a></li>
+                    <li><a href="/creasmall/html/mobile/product/productList.html">OUTLET</a></li>
                 </ul>
             </div>
         </div>
