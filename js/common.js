@@ -1,11 +1,11 @@
 $(document).ready(function (){
 	
-	//프로젝트 갯수
+	//프로젝트 갯수 체크
 	var site_cnt =$('.site_list li').length; 
 	$('.history_box .count').text(site_cnt);
 	
 	
-	// 헤더 fixed 효과, 소개 등장 효과 
+	// 사이트 리스트 fade in 효과 
     $(window).scroll(function(){
 		$('.site_list li').each( function(i){
             var obj_bottom = $(this).offset().top + $(this).outerHeight()/2;
