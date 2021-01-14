@@ -8,11 +8,14 @@ $(document).ready(function (){
 	// 헤더 fixed 효과, 소개 등장 효과 
     $(window).scroll(function(){
 		$('.site_list li').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object/2 ){
+            var obj_bottom = $(this).offset().top + $(this).outerHeight()/2;
+            var window_bottom = $(window).scrollTop() + $(window).height();
+			console.log($(window).height());
+            if( window_bottom > obj_bottom){
                 $(this).addClass('show');
-            }
+            }else{
+				$(this).removeClass('show');
+			}
         }); 
     });
 	
