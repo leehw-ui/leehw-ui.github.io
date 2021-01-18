@@ -1,7 +1,7 @@
 $(document).ready(function (){
 	
 	//프로젝트 갯수 체크
-	var site_cnt =$('.site_list li').length; 
+	var site_cnt =$('.site_list > li').length; 
 	$('.history_box .count').text(site_cnt);
 	
 	
