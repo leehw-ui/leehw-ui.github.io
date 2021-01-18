@@ -78,8 +78,8 @@ body, html {min-width: 320px;}
 }
 @media screen and (max-width:600px){
 	.wrap .port_area .site_list {display: block;}
-	.wrap .port_area .site_list li {max-width:100%; margin-bottom: 20px; opacity: 0; transition: all .8s;}
-	.wrap .port_area .site_list li.show {opacity: 1;}
+	.wrap .port_area .site_list > li {max-width:100%; margin-bottom: 20px; opacity: 0; transition: all .8s;}
+	.wrap .port_area .site_list > li.show {opacity: 1;}
 	.wrap .profile_area .history_box h4 {position:inherit;}
 	.wrap .profile_area .history_box li {text-align: left; padding-left: 0; transition: all .8s;}
 	.wrap .profile_area .skill_box {padding-left: 0;}

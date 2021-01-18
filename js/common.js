@@ -7,7 +7,7 @@ $(document).ready(function (){
 	
 	// 사이트 리스트 fade in 효과 
     $(window).scroll(function(){
-		$('.site_list li').each( function(i){
+		$('.site_list > li').each( function(i){
             var obj_bottom = $(this).offset().top + $(this).outerHeight()/2;
             var window_bottom = $(window).scrollTop() + $(window).height();
 			console.log($(window).height());
