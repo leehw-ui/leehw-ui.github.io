@@ -60,11 +60,11 @@ body, html {min-width: 320px;}
 	.wrap .port_area .site_list {width:100%;}
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 768px){
 	.wrap .container {padding:40px 20px;}
 	.wrap .profile_area {padding: 0;background: #f8f8f8; box-shadow: none;}
 	.wrap .profile_area .profile_user {margin-bottom: 30px;}
-	.wrap .profile_area .profile_desc {margin: 10px;padding: 20px;background: #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+	.wrap .profile_area .profile_desc {margin: 10px;padding: 20px;background: #fff; border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 	.wrap .profile_area .history_box dl {margin: 0; margin-bottom: 20px; padding-bottom: 20px; border-bottom:1px solid #ddd;}
 	.wrap .profile_area .history_box ul {padding:0; border-bottom:1px solid #ddd; background: #fff;}
 	.wrap .profile_area .history_box h4 {font-size: 16px;}
@@ -79,10 +79,11 @@ body, html {min-width: 320px;}
 @media screen and (max-width:600px){
 	.wrap .port_area .site_list {display: block;}
 	.wrap .port_area .site_list > li {max-width:100%; margin-bottom: 20px; opacity: 0; transition: all .8s;}
-	.wrap .port_area .site_list > li.show {opacity: 1;}
+	.wrap .port_area .site_list > li.show {opacity: 1;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 	.wrap .profile_area .history_box h4 {position:inherit;}
 	.wrap .profile_area .history_box li {text-align: left; padding-left: 0; transition: all .8s;}
 	.wrap .profile_area .skill_box {padding-left: 0;}
 	.wrap .profile_area .skill_box h4 {position:inherit;}
 	.wrap .profile_area .skill_box p {text-align: left;margin-top: 20px; font-weight: 700;}
+	.wrap .port_area .site_list .desc_work ul {min-height: inherit;}
 }
