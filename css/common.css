@@ -27,23 +27,23 @@ body, html {min-width: 320px;}
 .wrap .profile_area .skill_box p {}
 .wrap .port_area{flex-grow: 1;padding:0 0 20px 460px; }
 .wrap .port_area .site_list {display: inline-grid; grid-template-columns: repeat(4, 1fr); grid-column-gap: 20px; grid-row-gap: 20px;}
-.wrap .port_area .site_list > li{max-width: 400px;border: 1px solid #f7f7f7; border-radius: 10px; background: #fff;}
+.wrap .port_area .site_list > li{position: relative;max-width: 400px;border: 1px solid #f7f7f7; border-radius: 10px; background: #fff;}
 .wrap .port_area .site_list .site_thum img{width:100%; border-radius: 10px 10px 0 0;}
-.wrap .port_area .site_desc {padding:20px;}
+.wrap .port_area .site_desc {padding:20px; padding-bottom: 70px;}
 .wrap .port_area .site_desc > div {margin-bottom: 5px; font-size: 14px; line-height: 1.2;}
-.wrap .port_area .site_list .desc_name {font-weight: 700; word-break: keep-all;}
-.wrap .port_area .site_list .desc_name span {display: inline-block; margin-bottom: 5px; margin-right: 10px; padding:2px 10px; background: #ccc; color:#fff;}
+.wrap .port_area .site_list .desc_name {min-height: 41px;font-weight: 700; word-break: keep-all;}
+.wrap .port_area .site_list .desc_name span {display: inline-block; margin-bottom: 5px; margin-right: 10px; padding:2px 10px; background: #555; color:#fff;}
 .wrap .port_area .site_list .desc_name .new {background:#017eff;}
 .wrap .port_area .site_list .desc_name .port {background:#f99;}
 .wrap .port_area .site_list .desc_work {margin-top: 20px;}
-.wrap .port_area .site_list .desc_work ul {padding:10px; border: 1px solid #ddd;}
+.wrap .port_area .site_list .desc_work ul { min-height: 72px;padding:10px; background: #f8f8f8;}
 .wrap .port_area .site_list .desc_work ul li {position: relative; padding-left: 10px;}
 .wrap .port_area .site_list .desc_work ul li + li {margin-top: 5px;}
 .wrap .port_area .site_list .desc_work ul li:before {content:'-'; position: absolute; left:0; top:0; display: inline-block;}
-.wrap .port_area .site_list .desc_percent {padding-top: 20px; }
-.wrap .port_area .site_list .desc_percent p {display: inline-block;}
-.wrap .port_area .site_list .desc_percent p em {font-weight: 700;}
-.wrap .port_area .site_list .desc_term {color:#999;}
+.wrap .port_area .site_list .percent {padding-top: 20px; }
+.wrap .port_area .site_list .percent p {display: inline-block; color:#000;}
+.wrap .port_area .site_list .percent p em {font-weight: 700;}
+.wrap .port_area .site_list .desc_term {position: absolute; left:20px; bottom:20px;color:#999;}
 .wrap .port_area .site_list .desc_hash ul li {display: inline-block; font-weight: 400;}
 .wrap .port_area .site_list .desc_hash ul li:before {content:'#'; display: inline-block; margin-right: 3px;}
 
