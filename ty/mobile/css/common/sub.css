@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+.section:first-child {margin-top: 30px}
+.footer {margin-top: 55px;}
+
+.section.naviSection {position: relative; margin-top: 0; font-size: 0; text-align: center;}
+.naviSection a {display: block; height: 40px; font-size: 14px; font-weight: normal; line-height: 40px; border-top: 1px solid #ab2557; background-color: #c53f71; color: #fff;}
+.naviSection .currentPage {position: relative; font-weight: 600; border-top: 0; background-color: #ab2557;}
+.naviSection .currentPage:after {display: inline-block; margin-left: 8px; width:10px; height: 5px; font-size: 0; vertical-align: middle; background: url('/ty/html/mobile/image/common/icon_triangle.png') no-repeat; background-size: auto 100%; content: '';transition-property: all;transition-duration: .5s;transition-timing-function: ease;}
+.naviSection .currentPage.active:after {-ms-transform: rotate(180deg); /* IE 9 */-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */transform: rotate(180deg);}
+.naviSection .menuList {display: none; position: absolute; left: 0; top: 40px; width: 100%; font-size: 0; z-index: 100;}
+.naviSection .currentMenu {display: none;}
+.naviSection +.section {margin-top: 30px;}
+.naviSection +.section h5 {margin-top: 0;}
+.subNaviSection + .section h5 {margin-top: 0;}
+
+.subNaviSection {margin-top:30px; margin-bottom: 20px; font-size: 0; text-align: center;}
+.subNaviSection a{display: inline-block; font-size: 14px; vertical-align: top; color: #9e9e9e;}
+.subNaviSection a+a{margin-left: 19px;}
+.subNaviSection a.active {font-weight: 600; color: #ab2557;}
+
+.subNaviSection + .section {margin-top:0;}
+
+/*companyIntro*/
+.companyIntro .visuSection {position: relative; margin-left: 2.5%; margin-right: 2.5%; height: 150px; font-size: 0; background-repeat: no-repeat; background-size: 100% auto; background-position: center;}
+.companyIntro .visuSection .img {display: block; width: 100%;}
+.companyIntro .visuSection p {position: absolute; left: 0; top: 50%; width: 100%; font-size: 0; text-align: center;transform: translate(0, -50%);}
+.companyIntro .visuSection span {position: relative;top: 15px; display: block; font-size: 19px; font-weight: 600; color: #f3f3f3; opacity: 0;transition-property: all;transition-duration: 1s;transition-timing-function: ease;}
+.companyIntro .visuSection span+span {margin-top: 9px;transition-delay: 0.8s;}
+.companyIntro .visuSection span+span+span {transition-delay: 1.5s;}
+.companyIntro .visuSection .active span {top:0; opacity: 1;}
+.companyIntro .visuSection + .section {margin-top: 22px;}
+
+/*greeting*/
+.greeting .visuSection {background-image:  url('/ty/html/mobile/image/companyIntro/greeting/visu.jpg');}
+.greeting .lTxt {font-size: 14px; font-weight: 600; line-height: 21px;}
+.greeting .sTxt {margin-top: 13px; font-size: #7c7c7c; line-height: 17px; color: #7c7c7c;}
+.greeting .sTxt strong {color: #000;}
+.greeting ol {margin-top: 15px; font-size: 0;}
+.greeting li {padding: 14px 0; font-size: 0; box-sizing: border-box; background-color: #f8f8f8;}
+.greeting li + li {margin-top: 8px;}
+.greeting ol li span {display: inline-block; width:32.89%; font-size: 28px; font-weight: 600; font-family: 'Montserrat'; text-align: center; vertical-align: middle; color: #e9e9e9;}
+.greeting ol li p {display: inline-block; width: 67.11%; font-size: 11px; font-weight: 600; line-height: 17px; vertical-align: middle;}
+
+/*history*/
+.history .visuSection {background-image:  url('/ty/html/mobile/image/companyIntro/history/visu.jpg');}
+.history .historyList {position: relative; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; width: 97.5%; font-size: 0;}
+.history .historyList:before {position: absolute; left: 3px; top: 0; width: 1px; height: 100%; background-color: #e5e5e5; content: '';}
+.history .historyList li {position: relative; padding-left: 19px; font-size: 0; overflow: hidden;}
+.history .historyList li+li {margin-top: 40px;}
+.history .historyList li:before {position: absolute; left: 0; top: 0; width: 7px; height: 7px; background-color: #ab2557; border-radius:50%; content: '';}
+.history .historyList .txtBox {display: inline-block; padding-right: 10px; width: 54.39%; font-size: 0; vertical-align: top; box-sizing: border-box;}
+.history .historyList .txtBox * {line-height: 19px;}
+.history .historyList .year {margin-bottom: 16px; font-size: 21px; font-weight: 600; font-family: 'Montserrat';}
+.history .historyList .month {font-size: 11px; font-weight: 600;}
+.history .historyList .txt {font-size: 11px; color: #9e9e9e;}
+.history .historyList .txt + .month {margin-top: 10px;}
+.history .historyList .imgBox {float: right; max-width: 200px; width: 45.61%; font-size: 0; vertical-align: top;}
+.history .historyList .imgBox img {display: block; width: 100%;}
+.history .historyList .imgBox img+img {margin-top: 12px;}
+
+/*ci*/
+.ci h4 {margin-top: 35px; line-height: 21px;}
+.ci .logoSection {position: relative; padding:60px 0; margin-left: auto; margin-right: auto; width: 95.5%; height: 150px; font-size: 0; text-align: center; border-radius: 5px; background: url('/ty/html/mobile/image/companyIntro/ci/bg_logo.jpg') no-repeat; background-size: 100% auto; background-position: center;}
+.ci .logoSection img {display: inline-block; width: 79px; height: auto; vertical-align: top;}
+.ci .logoSection img+img {margin-left: 74px;}
+.ci  .logoDownSection {margin: 20px 0; font-size: 0; text-align: center;}
+.ci  .logoDownSection a+a{margin-left: 4px;}
+.ci .txt {font-size: 11px; line-height: 17px; color: #7c7c7c;}
+.ci .colorList {margin-top: 30px; font-size: 0;}
+.ci .colorList li {position: relative; padding:20px 0 20px 150px; font-size: 0; border-radius: 5px;}
+.ci .colorList li+li {margin-top: 8px;}
+.ci .colorList li:before {position: absolute; left: 51px; top:20px; width: 49px; height: 49px; border-radius: 15px; content: '';}
+.ci .colorList .wine {border:1px solid #ab2557;}
+.ci .colorList .wine:before {background-color: #ab2557;}
+.ci .colorList .gray_01 {border:1px solid #edede6;}
+.ci .colorList .gray_01:before {background-color: #edede6;}
+.ci .colorList .gray_02 {border:1px solid #b3aca9;}
+.ci .colorList .gray_02:before {background-color: #b3aca9;}
+.ci .colorList .gray_03 {border:1px solid #777475;}
+.ci .colorList .gray_03:before {background-color: #777475;}
+.ci .colorList .gray_04 {border:1px solid #58595b;}
+.ci .colorList .gray_04:before {background-color: #58595b;}
+.ci .colorList p {font-family: 'Montserrat'; line-height: 14px;}
+.ci .colorList .name {font-size: 12px; font-weight: 600;}
+.ci .colorList .value {margin-top: 10px; font-size: 10px; font-weight: 500; color: #777777;}
+
+/*location*/
+.location .mapSection {font-size: 0;}
+.location .img {display: block; width: 100%;}
+.location .infoSection {margin-top: 27px;}
+.location .infoSection h4 {font-size: 21px; font-weight: 600;}
+.location .infoSection .mapGo {font-size: 11px; font-weight: 600; color: #ab2557;}
+.location .infoSection .addr {margin-top: 25px; font-size: 11px; line-height: 17px;	}
+.location .infoSection .addr a {font-size: 11px; line-height: 17px;}
+.location .listType_02 {margin-top: 15px;}
+.location .line5 {color: #893bb6;}
+.location .line9 {color: #bf9f1e;}
+
+/*vision*/
+.vision .img {width: 100%;}
+.vision h4 {font-size: 16px;}
+.vision h4 span {display: inline-block; margin-left: 8px; font-size: 10px; color: #777777;}
+.vision h5 {margin-top: 20px; font-size: 14px; font-weight: 600;}
+.vision .visuSection {margin-right: 0; margin-left: 0; height: auto;}
+.vision .swiper-container-horizontal>.swiper-scrollbar {bottom:87px; width:95%;}
+.vision .swiper-scrollbar-drag {background-color: #fff;}
+.vision .swiper-slide {background-color: #fff;}
+.vision .visionSection {padding-bottom: 25px;}
+.vision .visionSection h5 {margin-top: 20px; margin-bottom: 0; font-size: 11px; font-weight: 600;}
+.vision .visionSection h5 span {display: inline-block; margin-left: 3px; font-size: 11px; font-weight: 600; color: #9e9e9e;}
+.vision .visionSection h5 + p {margin-top: 3px; font-size: 11px; line-height: 1.5;}
+.vision .visionSection span,
+.vision .visionSection p {display: inline-block; position: static; transition: none; transform: none;text-align: left; opacity: 1;}
+.vision .philosophySection h5 {margin-bottom: 10px;}
+.vision .listType_02 li {color: #000;}
+.vision .listType_02 li:before {background-color: #000;}
+.vision .listType_02 + .img {margin-top: 35px;}
+
+
+/*businessIntro*/
+.businessIntro .visuSection {margin-bottom: 30px;}
+.businessIntro .img {display: block; width: 100%;}
+.businessIntro .swiper-container-horizontal>.swiper-scrollbar {bottom:16px;}
+.businessIntro .swiper-container-horizontal>.swiper-scrollbar{width:97.5%;}
+.businessIntro .swiper-scrollbar-drag {background-color: #fff;}
+.businessIntro .txtBox {display: inline-block; font-size: 0; vertical-align: middle;}
+.businessIntro .lTxt {display: inline-block; margin-top: 25px; font-size: 16px; font-weight: 600; border-bottom: 1px solid #000;}
+.businessIntro .mTxt {margin-top:15px; font-size: 11px; line-height: 17px;}
+.businessIntro .borderBtn {margin-top: 25px;}
+.businessIntro .businessList ul {font-size: 0;}
+.businessIntro .businessList li {position: relative; display: block; padding: 12px; font-size: 0; vertical-align: top; border-radius: 5px; background-color: #f8f8f8; box-sizing: border-box;}
+.businessIntro .businessList li+li {margin-top: 12px;}
+.businessIntro .businessList .no {position: absolute; right: 12px; top: 18px; font-size: 12px; font-family: 'Montserrat'; font-weight: 600; color: #e9e9e9;}
+.businessIntro .businessList .thumImg {display: inline-block; width: 66px; vertical-align: middle;}
+.businessIntro .businessList .txtBox {margin-left: 12px;}
+.businessIntro .businessList .txtBox span {font-size: 12px; font-weight: 600; line-height: 20px; color: #ab2557;}
+.businessIntro .businessList .txtBox span+span {position: relative; margin-left: 8px; padding-left: 9px;}
+.businessIntro .businessList .txtBox span+span:before {position: absolute; left: 0; top: 1px; width: 1px; height: 10px; background-color: #ab2557; content: '';}
+.businessIntro .businessList .txtBox p {font-size: 16px; font-weight: 600; line-height: 20px;}
+.businessIntro .detailTxtBox {display: none; font-size: 0; overflow: hidden;}
+.businessIntro .detailTxtBox p {margin-top: 20px;font-size: 11px; line-height: 17px; color: #7c7c7c;}
+.businessIntro .detailTxtBox p+p {margin-top: 15px;}
+.businessIntro .detailTxtBox strong {display: block; margin-bottom: 3px; font-weight: 600; color: #000;}
+
+/*companySummary*/
+.companySummary .img {margin-bottom: 16px; width: 100%;}
+.companySummary .txt {font-size: 14px; font-weight: 600; line-height: 21px; color: #000;}
+.companySummary .txt strong {font-size: 14px; font-weight: 600; line-height: 21px;color: #ab2557;}
+.companySummary .txt span {display: block; margin-top: 12px; font-size: 11px; font-weight: normal; line-height: 17px;}
+.companySummary .tableType_02 {margin-top: 25px;}
+.companySummary .tableType_02 tr:nth-child(1) th,
+.companySummary .tableType_02 tr:nth-child(1) td {font-weight: 600;}
+
+/*stock*/
+.stock .section+.section {margin-top: 40px;}
+.stock .naviSection +.section {margin-top: 30px;}
+.stock .subNaviSection + .section {margin-top: 0;}
+
+/*directorate*/
+.directorate .tableNotice {margin-bottom: 10px;}
+.directorate .section+.section {margin-top: 40px;}
+.directorate .naviSection +.section {margin-top: 30px;}
+.directorate .subNaviSection + .section {margin-top: 0;}
+
+/*stockPrice*/
+.stockPrice .placeValueList {padding-top: 24px; padding-bottom: 24px; font-size: 0; text-align: center; border:1px solid #e9e9e9; border-radius:5px;}
+.stockPrice .placeValueList * {font-family: 'Montserrat';}
+.stockPrice .placeValueList li {display: inline-block; width: 33%;}
+.stockPrice .placeValueList li:nth-child(2) {width: 34%;}
+.stockPrice .placeValueList li+li {border-left: 1px solid #e9e9e9;}
+.stockPrice .placeValueList .placeName {font-size: 12px;}
+.stockPrice .placeValueList .value {margin-top: 10px; margin-bottom: 10px; font-size: 19px; font-weight: 600;}
+.stockPrice .stockSection {margin-top: 40px;}
+.stockPrice .stockSection .event {font-size: 14px;}
+.stockPrice .stockSection .price {display: block; margin-top: 12px; margin-bottom: 15px; font-size: 31px; font-weight: 600; font-family: 'Montserrat';}
+.stockPrice .stockSection .price strong {margin-left: 8px;}
+.stockPrice .relativeValue {display: inline-block; padding: 4px 4px 2px; font-size: 11px; font-weight: normal; font-family: 'Montserrat'; text-align: center; letter-spacing: 0; border-radius: 3px; vertical-align: middle; color: #fff;}
+.stockPrice .relativeValue:before {display: inline-block; margin-right: 2px; width: 7px; height: 4px; font-size: 0; vertical-align: middle; background-image: url('/ty/html/mobile/image/common/icon_triangle.png'); background-size: auto 100%; background-repeat: no-repeat; content: '';}
+.stockPrice .relativeValue.up {background-color: #ff4747;}
+.stockPrice .relativeValue.up:before {margin-bottom:2px; -ms-transform: rotate(180deg); /* IE 9 */-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */transform: rotate(180deg);}
+.stockPrice .relativeValue.down {background-color: #2b49ff;}
+
+/*finance*/
+.finance .section+.section {margin-top: 40px;}
+.finance .naviSection +.section {margin-top: 30px;}
+.finance .subNaviSection + .section {margin-top: 0;}
+
+/*ethicalManage*/
+.ethicalManage .grayBgBox {padding:20px 2.5%; font-size: 0; text-align: center;}
+.ethicalManage .grayBgBox i{display: inline-block; margin-right: 4.17%; margin-left: 4.17%; width: 20.83%; max-width: 80px; font-size: 0;vertical-align: middle;}
+.ethicalManage .grayBgBox i img {display: block; width: 100%;}
+.ethicalManage .grayBgBox .txtBox {display: inline-block; width: 70.83%; font-size: 0; text-align: left; vertical-align: middle;}
+.ethicalManage .grayBgBox .eTxt {font-size: 10px; color: #9e9e9e;}
+.ethicalManage .grayBgBox .kTxt {margin-top: 8px; font-size: 14px; font-weight: 600; color: #000;}
+.ethicalManage .grayBgBox .listType_06 {margin-top: 15px;}
+.ethicalManage .section > .title {margin-top: 27px; margin-bottom: 10px; font-size: 16px; font-weight: 600; color: #000;}
+.ethicalManage p{font-size:11px; line-height: 17px; color: #777777;}
+.ethicalManage .accodion {margin-top: 20px;}
+.ethicalManage .accodion .listType_06 {margin-left: 10px;}
+.ethicalManage .accodion .listType_06 li {color: #9e9e9e;}
+.ethicalManage .accodion .listType_06 li+li {margin-top: 0;}
+
+/*ethicsCharter*/
+.ethicsCharter .grayLineBox {padding-top: 20px; padding-bottom: 20px; font-size: 0; text-align: center;}
+.ethicsCharter .grayLineBox:nth-child(1) {margin-top: 20px;}
+.ethicsCharter .grayLineBox + .grayLineBox {margin-top: 8px;}
+.ethicsCharter .grayLineBox i {display: inline-block; margin-right: 3.62%; margin-left: 3.62%; width: 19.74%; max-width: 80px; vertical-align: middle;}
+.ethicsCharter .grayLineBox i img {display: block; width: 100%;}
+.ethicsCharter .grayLineBox .txtBox{display: inline-block; width:66.45%; font-size: 0; text-align: left; vertical-align: middle;}
+.ethicsCharter .grayLineBox .txtBox .lTxt {font-size: 14px; font-weight: 600; color: #000;}
+.ethicsCharter .grayLineBox .txtBox .lTxt + p {margin-top: 10px; font-size: 10px;}
+
+
+/*use*/
+.use .grayLineBox li {display: inline-block; width: 50%; vertical-align: top;}
+.use .process {font-size: 0;}
+.use .process .img {display: block; width: 100%;}
+.use .process ul {font-size: 0;}
+.use .process li {display: inline-block; width: 25%; font-size: 0; vertical-align: top; text-align: center; box-sizing: border-box;}
+.use .process .title {font-size: 14px; font-weight: 600;}
+.use .process .txt {display: inline-block; margin-top: 10px; font-size: 10px; line-height: 14px; color: #9e9e9e;}
+.use .process .txt a{font-size: 10px; line-height: 14px; color: #9e9e9e;}
+.use .process a.txt {font-weight: 600; color: #ab2557;}
+.use .grayBgBox {margin-top: 15px; margin-bottom: 28px;}
+.use .notice_01 {margin-top:14px;}
+
+/*resultList*/
+.resultList .listType_01 a:after {display: none;}
+.resultList .listType_01 .answerState {position: absolute; right: 17px; top: 50%; margin-top: -6px; width: 26px; font-size: 10px; text-align: center; color: #9e9e9e;}
+.resultList .listType_01 .answerState.answerY {color: #ab2557;}
+
+/*detailSection*/
+.detailSection .titleBox {padding-top: 12px; padding-bottom: 12px; font-size: 0; border-top: 1px solid #ab2557; border-bottom:1px solid #e9e9e9;}
+.detailSection .titleBox .cate {display: inline-block; margin-bottom: 5px; padding: 0 4px; font-size: 10px; font-weight: 600; line-height: 18px; border:1px solid #9e1c4e; color: #9e1c4e;}
+.detailSection .titleBox .title {font-size:14px; line-height: 1.3}
+.detailSection .titleBox .createInfo {margin-top: 8px; font-size:0;}
+.detailSection .titleBox .createInfo span {font-size:11px; color: #9e9e9e; vertical-align: top;}
+.detailSection .titleBox .createInfo span + span {position: relative; margin-left: 12px; padding-left: 12px;}
+.detailSection .titleBox .createInfo span + span:before {position:absolute; left: 0; top: 50%; margin-top: -5px; width: 1px; height: 10px; font-size:0; background-color: #e9e9e9; content: '';	}
+.detailSection .contBox {padding-top: 20px; padding-bottom: 20px; font-size:11px; line-height: 1.7;}
+.detailSection .fileBox {padding:15px 12px; font-size:0; background-color: #f8f8f8;}
+.detailSection .fileBox.notFile {padding: 0; background:none; border-top: 1px solid #000;}
+.detailSection .fileBox p {margin-bottom: 15px; font-size:11px; color: #9e9e9e;}
+.detailSection .fileBox a {display: block; font-size:10px; color: #4b80cf; text-decoration: underline  #4b80cf;}
+.detailSection .fileBox a+a {margin-top: 5px;}
+.detailSection h5 {display: block; margin-top: 40px; margin-bottom: 12px; font-size:11px; color: #9e9e9e;}
+.detailSection.answer .contBox {border-bottom:1px solid #000;}
+
+/*infoSection*/
+.infoSection .grayLineBox {font-size: 11px; line-height: 17px;}
+.infoSection .box div {font-size: 0}
+.infoSection .item {padding-top: 20px; margin-bottom: 12px; font-size: 11px;}
+.infoSection h5 + .box .item {margin-top: 0;}
+.infoSection .item span{font-size: 11px; color: #ab2557;}
+.infoSection input[type="text"],
+.infoSection input[type="password"],
+.infoSection textarea {padding:8px 9px; width: 100%; font-size: 10px; line-height: 14px; text-align: left; background-color: #f3f3f3; border-radius: 0; box-sizing: border-box; color: #9e9e9e;}
+.infoSection .email input {width:57.57%; vertical-align: middle;}
+.infoSection .email .directInput {display: none; width: 32.89%;}
+.infoSection .email .directInput.active {display: inline-block;}
+.infoSection .email span {display: inline-block; width:9.54%; font-size: 14px; font-weight: 600; text-align: center;  vertical-align: middle;}
+.infoSection .email select {display: inline-block; width: 32.89%; height: 30px; font-size: 10px; box-sizing: border-box; vertical-align: middle; box-sizing: border-box; border:1px solid #000;}
+.infoSection .email .directInput.active ~ select {margin-top: 4px;}
+.infoSection .password input+input {margin-top: 4px;}
+.infoSection .textarea {position: relative; padding-bottom: 25px; font-size: 0; background-color: #f3f3f3;}
+.infoSection .textarea textarea {padding:10px 9px; height: 125px; border:0; overflow-y: scroll; resize:none;}
+.infoSection .textarea .byte {position: absolute; right: 13px;bottom: 9px; font-size: 0;}
+.infoSection .textarea .byte span {font-size: 10px; color: #000;}
+.infoSection .textarea .byte span+span {color: #9e9e9e;}
+.infoSection .fileUpload {position: relative;}
+.infoSection .fileUpload +.fileUpload  {margin-top: 4px;}
+.infoSection .fileUpload .uploadFileName {width: 67.11%; vertical-align: top;}
+.infoSection .fileUpload button {display: inline-block;width:23.03%; height: 30px; font-size: 11px; vertical-align: top; box-sizing: border-box; border-radius: 0; background-color: #9e9e9e;color: #fff;}
+.infoSection .fileUpload .inputFile {position: absolute; left: 67.11%; top: 0; width:23.03%; height: 30px; font-size: 0; border: 0; opacity: 0;}
+.infoSection .fileUpload .plusMinus {display: inline-block; width: 9.86%; height: 30px; font-size: 0; vertical-align: top; box-sizing: border-box; border-radius: 0; background-size: auto 100%; background-position: center; background-repeat: no-repeat;}
+.infoSection .fileUpload .plusMinus.plus {background-image: url('/ty/html/mobile/image/common/fileupload_add.png'); background-color: #333333;}
+.infoSection .fileUpload .plusMinus.minus {background-image: url('/ty/html/mobile/image/common/fileupload_delete.png'); background-color: #4b80cf;}
+.infoSection .autoInputProtection {font-size: 0;}
+.infoSection .autoInputProtection .numImg {display: inline-block; width: 46.31%; vertical-align: middle;}
+.infoSection .autoInputProtection .numInput {display: inline-block;margin-left: 3.77%; width: 49.92%; vertical-align: middle;}
+.infoSection .notice_01 {margin-top: 10px;}
+.fileUploadClone {display: none;}
+
+/*pressReleaseList*/
+.pressReleaseList .listType_01 a {padding-right: 0;}
+.pressReleaseList .listType_01 a:after {display: none;}
+
+/*etc*/
+.etc p {font-size:10px; line-height: 1.8; color: #9e9e9e;}
+.etc h5+p {font-size: 11px;}
+.etc .article {margin-top: 10px;}
+.etc .title+p {margin-top: 0;}
+.etc .title {margin-top: 25px; margin-bottom: 5px; font-size: 11px; font-weight: 600; color: #000;}
+.etc .listType_02 {margin-top: 5px;}
+.etc .listType_02 li {font-size: 10px; line-height: 1.8; color: #9e9e9e;}
+.etc .listType_02 li:before {top:8px; width:5px; background-color: #9e9e9e;}
+
+/*contactus*/
+.contactus .red {color: #ff4444;}
+.contactus .gray{color: #9e9e9e;}
+.contactus .textarea {padding-bottom: 0;}
+
+/*error*/
+.error .img { display: block; margin:40px auto; height: 100px; }
+.error .lTxt {font-size: 11px; font-weight: 600; text-align: center;}
+.error .sTxt {margin-top: 18px; font-size: 10px; line-height: 14px; text-align: center; color: #777777;}
+
+/* 가로 */
+@media all  and (orientation : landscape) {
+	/*ci*/
+	.ci .colorList li {display: inline-block; margin-top: 10px; padding: 20px 0 20px 125px; width: 49%;}
+	.ci .colorList li:nth-child(2n) {margin-left: 2%;}
+	.ci .colorList li+li {margin-top: 10px;}
+	.ci .colorList li:before{left:40px;}
+
+	/*location*/
+	.location.container {font-size: 0;}
+	.location .mapSection {display: inline-block; width: 50%; vertical-align: middle;}
+	.location .infoSection {display: inline-block; margin-left: 1%; width: 49%; vertical-align: middle;}
+
+	/*use*/
+	.use .grayLineBox li {width: 33%;}
+}
+
+/* Tablet 세로 */
+@media all and (min-width:768px) and (max-width:1024px)  and (orientation : portrait) {
+	.section:first-child {margin-top: 60px}
+	.footer {margin-top: 110px;}
+
+	.section.naviSection{margin-top: 0;}
+	.naviSection a {height: 80px; font-size: 28px; line-height: 80px; border-top: 2px solid #ab2557;}
+	.naviSection .currentPage:after {margin-left: 16px; width:20px; height: 10px;}
+	.naviSection .menuList {top: 80px;}
+	.naviSection +.section {margin-top: 60px;}
+
+	.subNaviSection {margin-top:60px; margin-bottom: 40px;}
+	.subNaviSection a{font-size: 28px;}
+	.subNaviSection a+a{margin-left: 38px;}
+
+
+	/*companyIntro*/
+	.companyIntro .visuSection {height: 300px;}
+	.companyIntro .visuSection span {top: 30px; font-size: 38px;}
+	.companyIntro .visuSection span+span {margin-top: 18px;}
+	.companyIntro .visuSection + .section {margin-top: 44px;}
+
+	/*greeting*/
+	.greeting .lTxt {font-size: 28px; line-height: 42px;}
+	.greeting .sTxt {margin-top: 26px; line-height: 34px;}
+	.greeting ol {margin-top: 30px;}
+	.greeting li {padding: 28px 0;}
+	.greeting li + li {margin-top: 16px;}
+	.greeting ol li span {font-size: 56px;}
+	.greeting ol li p {font-size: 22px; line-height: 34px;}
+
+	/*history*/
+	.history .historyList:before {left: 6px; width: 2px;}
+	.history .historyList li {padding-left: 38px;}
+	.history .historyList li+li {margin-top: 80px;}
+	.history .historyList li:before {width: 14px; height: 14px;}
+	.history .historyList .txtBox {padding-right: 20px;}
+	.history .historyList .txtBox * {line-height: 38px;}
+	.history .historyList .year {margin-bottom: 32px; font-size: 42px;}
+	.history .historyList .month {font-size: 22px;}
+	.history .historyList .txt {font-size: 22px;}
+	.history .historyList .txt + .month {margin-top: 20px;}
+	.history .historyList .imgBox {max-width: 400px;}
+	.history .historyList .imgBox img+img {margin-top: 24px;}
+
+	/*ci*/
+	.ci h4 {margin-top: 70px; line-height: 42px;}
+	.ci .logoSection {padding:120px 0; height: 300px; border-radius: 10px;}
+	.ci .logoSection img {width:158px;}
+	.ci .logoSection img+img {margin-left: 148px;}
+	.ci  .logoDownSection {margin: 40px 0;}
+	.ci  .logoDownSection a+a{margin-left: 8px;}
+	.ci .txt {font-size: 22px; line-height: 34px;}
+	.ci .colorList {margin-top: 60px;}
+	.ci .colorList li {padding:40px 0 40px 300px; border-radius: 10px; border-width:2px;}
+	.ci .colorList li+li {margin-top: 16px;}
+	.ci .colorList li:before {left: 102px; top:40px; width: 98px; height: 98px; border-radius: 30px;}
+	.ci .colorList p {line-height: 28px;}
+	.ci .colorList .name {font-size: 24px;}
+	.ci .colorList .value {margin-top: 20px; font-size: 20px;}
+
+	/*location*/
+	.location .infoSection {margin-top: 54px;}
+	.location .infoSection h4 {font-size: 42px;}
+	.location .infoSection .mapGo {font-size: 22px;}
+	.location .infoSection .addr {margin-top: 50px; font-size: 22px; line-height: 34px;	}
+	.location .infoSection .addr a {font-size: 22px; line-height: 34px;}
+	.location .listType_02 {margin-top: 30px;}
+
+	/*vision*/
+	.vision h4 {font-size: 32px;}
+	.vision h4 span {margin-left:16px; font-size: 20px;}
+	.vision h5 {margin-top: 40px; font-size: 28px;}
+	.vision .swiper-container-horizontal>.swiper-scrollbar {bottom:174px; }
+	.vision .visionSection {padding-bottom: 50px;}
+	.vision .visionSection h5 {margin-top: 40px; font-size: 22px;}
+	.vision .visionSection h5 span {margin-left: 6px; font-size: 22px;}
+	.vision .visionSection h5 + p {margin-top: 6px; font-size: 22px;}
+	.vision .visuSection {height: auto;}
+	.vision .philosophySection h5 {margin-bottom: 20px;}
+	.vision .listType_02 + .img {margin-top: 70px;}
+
+	/*businessIntro*/
+	.businessIntro .visuSection {margin-bottom: 60px;}
+	.businessIntro .swiper-container-horizontal>.swiper-scrollbar {bottom:32px;}
+	.businessIntro .lTxt {margin-top: 50px; font-size: 32px; border-bottom: 2px solid #000;}
+	.businessIntro .mTxt {margin-top:30px; font-size: 22px; line-height: 34px;}
+	.businessIntro .borderBtn {margin-top: 50px;}
+	.businessIntro .businessList li {padding: 24px; border-radius: 10px;}
+	.businessIntro .businessList li+li {margin-top: 24px;}
+	.businessIntro .businessList .no {right: 24px; top: 36px; font-size: 24px;}
+	.businessIntro .businessList .thumImg {width: 132px;}
+	.businessIntro .businessList .txtBox {margin-left: 24px;}
+	.businessIntro .businessList .txtBox span {font-size: 24px; line-height: 40px;}
+	.businessIntro .businessList .txtBox p {font-size: 32px; line-height: 40px;}
+	.businessIntro .detailTxtBox p {margin-top: 40px;font-size: 22px; line-height: 34px;}
+	.businessIntro .detailTxtBox p+p {margin-top: 30px;}
+	.businessIntro .detailTxtBox strong {margin-bottom: 6px;}
+
+	/*companySummary*/
+	.companySummary .img {margin-bottom: 32px;}
+	.companySummary .txt {font-size: 28px; line-height: 42px;}
+	.companySummary .txt strong {font-size: 28px; line-height: 42px;}
+	.companySummary .txt span {margin-top: 24px; font-size: 22px; line-height: 34px;}
+	.companySummary .tableType_02 {margin-top: 50px;}
+
+	/*stock*/
+	.stock .section+.section {margin-top: 80px;}
+	.stock .naviSection +.section {margin-top: 60px;}
+	.stock .subNaviSection + .section {margin-top: 0;}
+
+	/*directorate*/
+	.directorate .section+.section {margin-top: 80px;}
+	.directorate .naviSection +.section {margin-top: 60px;}
+	.directorate .subNaviSection + .section {margin-top: 0;}
+
+	/*stockPrice*/
+	.stockPrice .placeValueList {padding-top: 48px; padding-bottom: 48px; border:2px solid #e9e9e9; border-radius:10px;}
+	.stockPrice .placeValueList li+li {border-left: 2px solid #e9e9e9;}
+	.stockPrice .placeValueList .placeName {font-size: 24px;}
+	.stockPrice .placeValueList .value {margin-top: 20px; margin-bottom: 10px; font-size: 38px;}
+	.stockPrice .stockSection {margin-top: 80px;}
+	.stockPrice .stockSection .event {font-size: 28px;}
+	.stockPrice .stockSection .price {margin-top: 24px; margin-bottom: 30px; font-size: 62px;}
+	.stockPrice .stockSection .price strong {margin-left: 16px;}
+	.stockPrice .relativeValue {padding: 8px 8px 4px; font-size: 22px;border-radius: 6px;}
+	.stockPrice .relativeValue:before {margin-right: 4px; width: 14px; height: 8px;}
+	.stockPrice .relativeValue.up:before {margin-bottom:4px;}
+
+	/*finance*/
+	.finance .section+.section {margin-top: 80px;}
+	.finance .naviSection +.section {margin-top: 60px;}
+	.finance .subNaviSection + .section {margin-top: 0;}
+
+	/*ethicalManage*/
+	.ethicalManage .grayBgBox {padding:40px 2.5%;}
+	.ethicalManage .grayBgBox i{max-width: 160px;}
+	.ethicalManage .grayBgBox .eTxt {font-size: 20px;}
+	.ethicalManage .grayBgBox .kTxt {margin-top: 16px; font-size: 28px;}
+	.ethicalManage .grayBgBox .listType_06 {margin-top: 30px;}
+	.ethicalManage .section > .title {margin-top: 24px; margin-bottom: 20px; font-size: 32px;}
+	.ethicalManage p{font-size:22px; line-height: 34px;}
+	.ethicalManage .accodion {margin-top: 40px;}
+	.ethicalManage .accodion .listType_06 {margin-left: 20px;}
+
+	/*ethicsCharter*/
+	.ethicsCharter .grayLineBox {padding-top: 40px; padding-bottom: 40px;}
+	.ethicsCharter .grayLineBox:nth-child(1) {margin-top: 40px;}
+	.ethicsCharter .grayLineBox + .grayLineBox {margin-top: 16px;}
+	.ethicsCharter .grayLineBox i {max-width: 160px;}
+	.ethicsCharter .grayLineBox .txtBox .lTxt {font-size: 28px;}
+	.ethicsCharter .grayLineBox .txtBox .lTxt + p {margin-top: 20px; font-size: 20px;}
+
+	/*use*/
+	.use .process .title {font-size: 28px;}
+	.use .process .txt {margin-top: 20px; font-size: 20px; line-height: 28px;}
+	.use .process .txt a{font-size: 20px; line-height: 28px;}
+	.use .grayBgBox {margin-top: 30px; margin-bottom: 56px;}
+	.use .notice_01 {margin-top:28px;}
+
+	/*resultList*/
+	.resultList .listType_01 .answerState {right: 34px; margin-top: -12px; width: 54px; font-size: 20px;}
+
+	/*detailSection*/
+	.detailSection .titleBox .cate {margin-bottom: 10px; padding: 0 8px; font-size: 20px; line-height: 36px; border:2px solid #9e1c4e;}
+	.detailSection .titleBox {padding-top: 24px; padding-bottom: 24px;border-top: 2px solid #ab2557; border-bottom:2px solid #e9e9e9;}
+	.detailSection .titleBox .title {font-size:28px;}
+	.detailSection .titleBox .createInfo {margin-top: 16px;}
+	.detailSection .titleBox .createInfo span {font-size:22px;}
+	.detailSection .titleBox .createInfo span + span {margin-left: 24px; padding-left: 24px;}
+	.detailSection .titleBox .createInfo span + span:before {width: 2px; height: 18px;}
+	.detailSection .contBox {padding-top: 40px; padding-bottom: 40px; font-size:22px;}
+	.detailSection .fileBox {padding:30px 24px;}
+	.detailSection .fileBox.notFile {border-top: 2px solid #000;}
+	.detailSection .fileBox p {margin-bottom: 30px; font-size:22px;}
+	.detailSection .fileBox a {font-size:20px;}
+	.detailSection .fileBox a+a {margin-top: 10px;}
+	.detailSection h5 {margin-top: 80px; margin-bottom: 24px; font-size:22px;}
+	.detailSection.answer .contBox {border-bottom:2px solid #000;}
+
+	/*infoSection*/
+	.infoSection .grayLineBox {font-size: 22px; line-height: 34px;}
+	.infoSection .item {margin-top: 40px; margin-bottom: 24px; font-size: 22px;}
+	.infoSection .item span{font-size: 22px;}
+	.infoSection input[type="text"],
+	.infoSection input[type="password"],
+	.infoSection textarea {padding:16px 18px; font-size: 20px; line-height: 28px;}
+	.infoSection .email span {font-size: 28px;}
+	.infoSection .email select {height: 60px; font-size: 20px; border:2px solid #000;}
+	.infoSection .email .directInput.active ~ select {margin-top: 8px;}
+	.infoSection .password input+input {margin-top: 8px;}
+	.infoSection .textarea {padding-bottom: 50px;}
+	.infoSection .textarea textarea {padding:20px 18px; height: 250px;}
+	.infoSection .textarea .byte {right: 26px;bottom: 18px;}
+	.infoSection .textarea .byte span {font-size: 20px;}
+	.infoSection .fileUpload +.fileUpload  {margin-top: 8px;}
+	.infoSection .fileUpload button {height: 60px; font-size: 22px;}
+	.infoSection .fileUpload .inputFile {height: 60px;}
+	.infoSection .fileUpload .plusMinus {height: 60px;}
+	.infoSection .notice_01 {margin-top: 20px;}
+
+	/*etc*/
+	.etc p {font-size:20px;}
+	.etc h5+p {font-size: 22px;}
+	.etc .article {margin-top: 20px;}
+	.etc .title+p {margin-top: 0;}
+	.etc .title {margin-top: 50px; margin-bottom: 10px; font-size: 22px;}
+	.etc .listType_02 {margin-top: 10px;}
+	.etc .listType_02 li {font-size: 20px;}
+	.etc .listType_02 li:before {top:16px; width:10px;}
+
+	/*error*/
+	.error .img {margin:80px auto; height: 200px; }
+	.error .lTxt {font-size: 22px;}
+	.error .sTxt {margin-top: 36px; font-size: 20px; line-height: 28px;}
+
+}
+
+/* Tablet 가로 */
+@media all and (min-width:768px) and (max-width:1024px)  and (orientation : landscape) {
+
+	/*businessIntro*/
+	.businessIntro .swiper-container {display: inline-block; margin-right: 20px; width: 50%; vertical-align: middle;}
+	.businessIntro .visuSection .img {display: inline-block; margin-right: 20px; width: 50%; vertical-align: middle;}
+	.businessIntro .visuSection .swiper-container .img {width: 100%;}
+	.businessIntro .lTxt {margin-top: 0;}
+	.businessIntro .businessList li {display: inline-block; width: 49%;}
+	.businessIntro .businessList li:nth-child(1),
+	.businessIntro .businessList li:nth-child(2) {margin-top: 0;}
+	.businessIntro .businessList li:nth-child(2n) {margin-left: 2%;}
+
+	/*companySummary*/
+	.companySummary .img {display: inline-block; width: 50%; vertical-align: middle;}
+	.companySummary .txt {display: inline-block; padding-left: 20px; width: 49%; box-sizing: border-box; vertical-align: middle;}
+
+	/*stockPrice*/
+	.stockPrice .stockSection {display: inline-block; width: 49%; vertical-align: top;}
+	.stockPrice .stockSection + .stockSection {margin-left: 1%;}
+
+	/*ethicsCharter*/
+
+	.ethicsCharter .grayLineBox {display: inline-block; width: 49%; vertical-align: top;}
+	.ethicsCharter .grayLineBox:nth-child(2) {margin-top: 20px;}
+	.ethicsCharter .grayLineBox:nth-child(2n) {margin-left: 2%;}
+
+
+}

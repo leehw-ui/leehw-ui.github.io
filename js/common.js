@@ -10,7 +10,6 @@ $(document).ready(function (){
 		$('.site_list > li').each( function(i){
             var obj_bottom = $(this).offset().top + $(this).outerHeight()/2;
             var window_bottom = $(window).scrollTop() + $(window).height();
-			console.log($(window).height());
             if( window_bottom > obj_bottom){
                 $(this).addClass('show');
             }else{
