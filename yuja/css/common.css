@@ -1,0 +1,79 @@
+.wrap {position: relative;}
+
+header {position: fixed; left:0; top:0; width:100%; height: 80px; z-index: 100; transition:all 1s ease;}
+header .headerArea { position: relative; width:1190px; height: 100%; margin:0 auto; padding:25px 0 23px; }
+header .headerArea h1 {display: inline-block;}
+header .headerArea h1 img{display: inline-block;}
+header .headerArea .menu {position: absolute; right:0; top:25px; }
+header .headerArea .menu li {display: inline-block;transition: border-color 1s;}
+header .headerArea .menu li a {display: block;padding-bottom: 5px ;font-size: 18px; font-weight: 700; color:#fff; }
+header .headerArea .menu li + li {margin-left: 50px;}
+header .headerArea .menu li:last-child a {color:#ffa500;}
+header .headerArea .menu li:hover,
+header .headerArea .menu li.active {border-bottom: 2px solid #fff;}
+header .headerArea .menu li:last-child:hover,
+header .headerArea .menu li:last-child.active {border-bottom: 2px solid #ffa500;}
+header.active {background: #2a2a2a;}
+
+/*color*/
+.pink {color:#ff215a;}
+
+
+.btn {display: inline-block; padding: 10px 50px; font-size: 16px; font-weight: 700; border-radius: 5px;}
+.btn.pink {color:#fff; background: #ff648c;}
+
+/*form style*/
+.select {}
+.select select{width:200px;background-color: #f8f8f8; border-radius: 5px; border: 0; border-radius: 5px}
+textarea {background: #f8f8f8; width:100%; resize: none; border: 0; border-radius: 5px;}
+.inputBox input {width:100%; background: #f8f8f8; border: 0; border-radius: 5px;}
+
+.contactForm {position: relative;}
+.contactForm p{font-size: 18px; font-weight: 700;margin-bottom:10px;}
+.contactForm > div {margin-bottom: 30px; line-height: 1; opacity: 0; margin-top: -1%; transition: all .5s;}
+.contactForm > div.on {opacity: 1; margin-top: 0;}
+.contactForm > div input{}
+.contactForm .btnArea {text-align: right; margin-top: 40px;}
+
+.container .section { position: relative;width: 100%;  height: 100vh; }
+.container .cont{position: relative;width:1190px; margin:350px auto 0; }
+.container .cont .tit{ font-size: 52px; font-weight: 700;}
+.container .cont .txt{margin-top: 68px; font-size: 22px; font-weight: 400;}
+.container .cont .flag{display: inline-block; padding:12px 18px; background:#fff; color:#000; font-size: 18px; line-height: 1; border-radius: 5px; font-weight: 700;}
+.container .cont .imgBox {position: absolute; right:0; top:50%; transform: translateY(-50%); width:590px; height: 385px; background: #ddd;}
+.container .cont .contactForm {position: absolute; right:0; top:50%; transform: translateY(-50%); width:590px; }
+.container .cont .contactForm label {font-size: 18px;}
+
+.bgWrap { clip: rect(0, auto, auto, 0);  position: absolute;  top: 0;  left: 0;  width: 100%;  height: 100%;}
+.bgWrap .bg {position: fixed;display: block;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center center; z-index: 10;}
+
+.bgWrap02 {}
+.bgWrap02 .bg {overflow: hidden;width: 100%;height: 100vh;background-size: cover;background-position: center center; }
+
+.visual .bgWrap .bg { background-image: url('../images/bg01.jpg');}
+.visual .cont .txtBox {color:#fff;}
+.visual .cont .txtBox .tit {margin-top: -2%; opacity: 0;transition: all .5s;}
+.visual .cont .txtBox .txt {margin-top: 0; opacity: 0; transition: all 1s ease .5s;}
+.visual .cont .txtBox.on .txt {margin-top: 68px; opacity: 1;}
+.visual .cont .txtBox.on .tit {margin-top: 0px; opacity: 1;}
+
+.story .bgWrap02 .bg {  background-color:#fff;}
+.story .bornTit {display: inline-block;position: absolute; left:50%; margin-left: -610px; top:200px; font-size: 60px; font-weight: 700; line-height: 1.2;background: #6a6a6a; color: #fff; /*transition: all 1.5s ease-out 0.5s;*/}
+.story .bornTit.active {left:65vw; margin-left: 0; opacity: 0;}
+.story .typing:after {content:''; display: inline-block;animation-name: cursor;  animation-duration: 0.5s;  animation-iteration-count: infinite;  border-right: 1px solid #fff; vertical-align: top; height: 73px;}
+.story .cont .txtBox .tit {margin-top: -2%; opacity: 0;transition: all 1.5s ease .5s;}
+.story .cont .txtBox .txt {margin-top: 0; opacity: 0; transition: all 1s ease 1s;}
+.story .cont .txtBox.on .txt {margin-top: 68px; opacity: 1;}
+.story .cont .txtBox.on .tit {margin-top: 0px; opacity: 1;}
+
+.service .bgWrap02 .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.1); transition: all 1s;}
+.service.on .bgWrap02 .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.0);}
+
+
+
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
