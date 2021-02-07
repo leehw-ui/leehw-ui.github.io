@@ -30,12 +30,7 @@ $(function(){
 			}else if(scrollTop >= contactT){
 				$('header .headerArea .menu li').removeClass('active');
 				$('header .headerArea .menu li:last-child').addClass('active');
-				$('.contactForm > div').each(function(i){
-					var target = $(this);
-					setTimeout(function(){
-						target.addClass('on');
-					},i*500);
-				});
+				$('.contactForm > div').addClass('on');
 			}
 		}else{
 			$('header').removeClass('active');

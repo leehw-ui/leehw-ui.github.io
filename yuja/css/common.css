@@ -70,8 +70,8 @@ textarea {background: #f8f8f8; width:100%; resize: none; border: 0; border-radiu
 .story .cont .txtBox.on .txt {margin-top: 68px; opacity: 1;}
 .story .cont .txtBox.on .tit {margin-top: 0px; opacity: 1;}
 
-.service .bgWrap02 .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.1); transition: all 1s;}
-.service.on .bgWrap02 .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.0);}
+.service .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.1); transition: all 1s;}
+.service.on .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.0);}
 
 
 
