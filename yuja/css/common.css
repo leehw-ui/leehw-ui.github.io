@@ -28,19 +28,19 @@ header.active {background: #2a2a2a;}
 
 /*form style*/
 .select {}
-.select select{width:200px;background-color: #f8f8f8; border-radius: 5px; border: 0; border-radius: 5px}
+.select select{width:200px;background-color: #f8f8f8; border-radius: 5px; border: 0; border-radius: 5px;    font-family: 'Noto Sans KR'}
 textarea {background: #f8f8f8; width:100%; resize: none; border: 0; border-radius: 5px;}
 .inputBox input {width:100%; background: #f8f8f8; border: 0; border-radius: 5px;}
 
 .contactForm {position: relative;}
 .contactForm p{font-size: 18px; font-weight: 700;margin-bottom:10px;}
-.contactForm > div {margin-bottom: 30px; line-height: 1; opacity: 0; margin-top: -1%; transition: all .5s;}
-.contactForm > div.on {opacity: 1; margin-top: 0;}
+.contactForm > div {margin-bottom: 30px; line-height: 1; opacity: 0; margin-top: -5%; transition: all .5s;}
+.contact.isAni .contactForm > div {opacity: 1; margin-top: 0;}
 .contactForm > div input{}
 .contactForm .btnArea {text-align: right; margin-top: 40px;}
 
 .container .section { position: relative;width: 100%;  height: 100vh; }
-.container .cont{position: relative;width:1190px; margin:350px auto 0; }
+.container .cont{position: relative;width:1190px; margin:300px auto 0; }
 .container .cont .tit{ font-size: 52px; font-weight: 700;}
 .container .cont .txt{margin-top: 68px; font-size: 22px; font-weight: 400;}
 .container .cont .flag{display: inline-block; padding:12px 18px; background:#fff; color:#000; font-size: 18px; line-height: 1; border-radius: 5px; font-weight: 700;}
@@ -54,30 +54,118 @@ textarea {background: #f8f8f8; width:100%; resize: none; border: 0; border-radiu
 .bgWrap02 {}
 .bgWrap02 .bg {overflow: hidden;width: 100%;height: 100vh;background-size: cover;background-position: center center; }
 
-.visual .bgWrap .bg { background-image: url('../images/bg01.jpg');}
 .visual .cont .txtBox {color:#fff;}
 .visual .cont .txtBox .tit {margin-top: -2%; opacity: 0;transition: all .5s;}
 .visual .cont .txtBox .txt {margin-top: 0; opacity: 0; transition: all 1s ease .5s;}
-.visual .cont .txtBox.on .txt {margin-top: 68px; opacity: 1;}
-.visual .cont .txtBox.on .tit {margin-top: 0px; opacity: 1;}
+.visual.isAni .cont .txtBox .txt {margin-top: 68px; opacity: 1;}
+.visual.isAni .cont .txtBox .tit {margin-top: 0px; opacity: 1;}
+.visual .swipe {display: none;}
+
+.visual .bgWrap .bg { background-image: url('../images/bg01.jpg'); opacity:0.8;}
+.visual.isAni .bgWrap .bg {opacity: 1;}
 
 .story .bgWrap02 .bg {  background-color:#fff;}
-.story .bornTit {display: inline-block;position: absolute; left:50%; margin-left: -610px; top:200px; font-size: 60px; font-weight: 700; line-height: 1.2;background: #6a6a6a; color: #fff; /*transition: all 1.5s ease-out 0.5s;*/}
+.story .bornTit {display: inline-block;font-size: 60px; font-weight: 700; line-height: 1.2;background: #6a6a6a; color: #fff; /*transition: all 1.5s ease-out 0.5s;*/}
 .story .bornTit.active {left:65vw; margin-left: 0; opacity: 0;}
 .story .typing:after {content:''; display: inline-block;animation-name: cursor;  animation-duration: 0.5s;  animation-iteration-count: infinite;  border-right: 1px solid #fff; vertical-align: top; height: 73px;}
+.story .cont  {margin-top: 240px;}
 .story .cont .txtBox .tit {margin-top: -2%; opacity: 0;transition: all 1.5s ease .5s;}
 .story .cont .txtBox .txt {margin-top: 0; opacity: 0; transition: all 1s ease 1s;}
-.story .cont .txtBox.on .txt {margin-top: 68px; opacity: 1;}
-.story .cont .txtBox.on .tit {margin-top: 0px; opacity: 1;}
+.story.isAni .cont .txtBox .txt {margin-top: 68px; opacity: 1;}
+.story.isAni .cont .txtBox .tit {margin-top: 20px; opacity: 1;}
 
-.service .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.1); transition: all 1s;}
-.service.on .bg {  background-image:url('../images/bg02.jpg');transform: scale(1.0);}
+.service .bg { position: relative; background-image:url('../images/bg02.jpg');  background-color: rgba( 255, 255, 255, 0.5 ); transition: all 3s; z-index: 1; }
+.service .cont .txtBox {margin-top: -50px; opacity: 0; transition: all 1s; }
+.service .cont .imgBox {opacity: 0; top:40%; transition: all 1s ease .5s;}
+.service.isAni .cont .txtBox {opacity: 1;margin-top: 0px;}
+.service.isAni .cont .imgBox {opacity: 1; top:50%;}
+.service.isAni .bg {  background-image:url('../images/bg02.jpg');  background-color: rgba( 255, 255, 255, 1 );}
+.service .bg:before {content: "";position: absolute;top: 0; left: 0;width: 100%; height: 100%;opacity: .4; z-index: -1;background-color: rgba( 255, 255, 255, 1 ); }
+.service.isAni .bg:before {opacity:0;background-color:none; }
 
+
+
+.contact .cont .txtBox .tit{margin-top: -50px;transition: all 1s}
+.contact.isAni .cont .txtBox .tit{margin-top: 0px}
 
 
 @keyframes cursor{ 
-  0%{border-right: 1px solid #fff} 
+	0%{border-right: 1px solid #fff} 
   50%{border-right: 1px solid #000} 
   100%{border-right: 1px solid #fff} 
 }
 
+
+
+@media screen and (max-width:1200px) {
+	header .headerArea {width:100%; padding:25px }
+	header .headerArea .menu {right: 25px;}
+	.bgWrap02 .bg {height: 100%; padding-bottom: 17.5vw;}
+	.container .section .cont{width:100%; padding:0 25px; margin:26vh auto 0;}
+	.container .section .cont .txtBox + div {width:100%; margin-top: 10.6vw}
+	
+	.container .section {height: 100%; overflow: hidden;}
+	.container .visual {height: 100vh;}
+	
+	.container .cont .imgBox {position: relative; left:inherit; top:inherit; transform: translateY(0)}
+	.container .cont .contactForm {position: relative; left:inherit; top:inherit; transform: translateY(0)}
+	
+	.select select {width:50vw;}
+}
+
+@media screen and (max-width:768px) {
+	header {height: auto;}
+	header .headerArea {width:100%; padding:4.5vh 25px 4vh; }
+	header .headerArea .menu {position: fixed; left:0; bottom:0; top:inherit; width:100%; padding:3.6vh 0;background:#2a2a2a; }
+	header .headerArea .menu ul{text-align: center;}
+	header .headerArea .menu li a {font-size: 12px;}
+	
+	.container .section .cont {margin:22vh auto 0;}
+	.visual.isAni .cont .txtBox .tit {margin-top: 20px;}
+	.visual.isAni .cont .txtBox .txt {margin-top: 8vh;}
+	.container .cont .tit {margin-top: 5.3vh; font-size:30px; }
+	.container .cont .txt {font-size: 16px; margin-top: 24px;}
+	.container .cont .flag {font-size: 16px; padding:10px 15px;}
+	
+	.story .bornTit {font-size: 40px;}
+	.story .typing:after {height: 40px;}
+	.story.isAni .cont .txtBox .txt {margin-top: 30px;}
+}
+
+@media screen and (max-width:640px) {
+	header .headerArea {padding:4.5vw 25px 4vw;}
+	.container .visual .cont{margin: 26vh auto 0;}
+	.story .bornTit {font-size: 10vw; margin-bottom: 20px;}
+	.story .typing:after {height: 10vw;}
+	.story .bgWrap02 .bg {height: 100vh;}
+	.container .cont .txtBox {word-break: keep-all;}
+	.container .cont .tit {margin-top: 5.3vh; font-size: 6.6vw; }
+	.container .cont .txt {font-size: 3.8vw; margin-top: 10vw;}
+	.container .cont .flag {font-size: 3.4vw; padding:1.6vw 1.8vw;}
+	
+	.visual.isAni .cont .txtBox .tit{margin-top: 5.3vw;}
+	.visual.isAni .cont .txtBox .txt {margin-top: 8vw;}
+	.visual .swipe {display: block; width:100%; position: absolute; color:#fff; bottom:13vh; text-align: center;}
+	.visual .swipe:before {content:''; display: block; width:1px; height: 2vh; background: #fff; margin:0 auto 5px;}
+	.visual .swipe:after {content:''; display: block; width:1px; height: 2vh; background: #fff; margin:5px auto 0}
+	
+	.story .cont .txtBox.on .tit br{display: none;}
+	.story.isAni .cont .txtBox .tit {margin-top: 0;}
+	.story.isAni .cont .txtBox .txt {margin-top: 8vw;}
+	.contactForm p {word-break: keep-all; font-size: 3.8vw; line-height: 1.2;}
+	.container .cont .tit {word-break: keep-all;}
+	.container .cont .txtBox br{display: none;}
+	
+	.btn.pink {width:100%; padding:3vw 0; text-align: center; font-size: 5vw; background:#ff215a; border-radius: 0;}
+	
+	.select select {font-size: 3vw;}
+	.wrap {min-width: 300px;}
+	header .headerArea .menu {padding:3.5vw 0;}
+	header .headerArea .menu li a {font-size: 3.4vw;}
+	
+	.visual .cont .txtBox.on .txt {margin-top: 8vh;}
+	.story .cont .txtBox.on .txt { margin-top: 8vh;}
+	
+	.orange {color:#ffa500;}
+	.gray {color:#aaa;}
+}

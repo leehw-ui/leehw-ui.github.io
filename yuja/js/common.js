@@ -1,8 +1,4 @@
 $(function(){
-	setTimeout(function(){
-		$('.visual .cont .txtBox').addClass('on');
-	},500);
-	
 	var viewportH = $(window).height(); // Viewport Height
 	var visualT = $('.container .visual').offset().top;
 	var storyT = $('.container .story').offset().top;
@@ -13,12 +9,10 @@ $(function(){
 	var storyContT = storyT - headerH;
 	var secView = viewportH - (secH*0.5);
 	
-	function scrollAni(){
+	function scrollAniHeader(){
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop>=secView){
 			$('header').addClass('active');
-			$('.visual .cont .txtBox').removeClass('on');
-			$('.story .cont .txtBox').addClass('on');
 			if(scrollTop <= serviceT){
 				$('header .headerArea .menu li').removeClass('active');
 				$('header .headerArea .menu li:first-child').addClass('active');
@@ -26,22 +20,35 @@ $(function(){
 			else if(scrollTop > serviceT && scrollTop < contactT){
 				$('header .headerArea .menu li').removeClass('active');
 				$('header .headerArea .menu li:nth-child(2)').addClass('active');
-				$('.service').addClass('on');
 			}else if(scrollTop >= contactT){
 				$('header .headerArea .menu li').removeClass('active');
 				$('header .headerArea .menu li:last-child').addClass('active');
-				$('.contactForm > div').addClass('on');
 			}
 		}else{
 			$('header').removeClass('active');
 			$('header .headerArea .menu li').removeClass('active');
-			$('.visual .cont .txtBox').addClass('on');
-			$('.story .cont .txtBox').removeClass('on');
-			$('.container .visual .bg').animate({'opacity':'1'},700);
 		}
-		
-		scrollM();
 	}
+	
+	
+	function scrollAniCont(){
+		var scrollTop = $(window).scrollTop();
+		var halfvisualT = parseInt(visualT - ($('.visual').outerHeight()/2));
+		var halfstoryT = parseInt(storyT - ($('.story').outerHeight()/2));
+		var halfserviceT = parseInt(serviceT - ($('.service').outerHeight()/2));
+		var halfcontactT = parseInt(contactT - ($('.contact').outerHeight()/2));
+		if(scrollTop>=halfvisualT && scrollTop<halfstoryT){
+			$('.visual').addClass('isAni').siblings().removeClass('isAni');
+		}
+		else if(scrollTop>=halfstoryT && scrollTop<halfserviceT){
+			$('.story').addClass('isAni').siblings().removeClass('isAni');
+		}else if(scrollTop>=halfserviceT && scrollTop<halfcontactT){
+			$('.service').addClass('isAni').siblings().removeClass('isAni');
+		}else if(scrollTop>=halfcontactT){
+			$('.contact').addClass('isAni').siblings().removeClass('isAni');
+		}
+	}
+	
 	
 	$('header .headerArea .menu li').click(function(){
 		var n = $('header .headerArea .menu li').index($(this));
@@ -55,24 +62,24 @@ $(function(){
 	});
 	
 	$(window).scroll(function(){
-		scrollAni();
+		scrollAniHeader();
+		scrollM();
+		scrollAniCont();
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop>=secView && typF == true){ 
 			typF = false;
 			var set = setInterval(typeWriter, 120);//타이핑 효과
-			$('.container .visual .bg').animate({'opacity':'0.8'},700);
 		}
 	});
 	
 	$(window).on('load',function(){
-		scrollAni();
+		scrollAniHeader();
+		scrollM();
+		scrollAniCont();
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop>=secView && typF == true){ 
 				typF = false;
 				var set = setInterval(typeWriter, 120);//타이핑 효과
-				$('.container .visual .bg').animate({'opacity':'0.8'},700);
-		}else{
-			$('.story .cont .txtBox').addClass('on');
 		}
 	});
 	
