@@ -17,7 +17,6 @@ $(document).ready(function(){
 			}
 		}
     });
-//	step_swiper.destroy();
 	
 	var news_swiper = new Swiper('.news_wrap .swiper-container', {
 		slidesPerView: 3, 
