@@ -106,7 +106,7 @@
 
 
 @media screen and (max-width: 640px) {
-	.main_visual_wrap .bg_img_box {width:100vw;padding-top: 100%;}
+	.main_visual_wrap .bg_img_box {width:100vw;padding-top: 100vw;}
 	.main_visual_wrap .swiper-slide-active .main_visu_desc {margin:10px 0;}
 	.main_visual_wrap .text_box {left: 20px;}
 	.works_wrap .works_list .works_item .works_text{ min-height: 75px;}
