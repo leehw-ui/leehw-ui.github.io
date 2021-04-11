@@ -33,6 +33,10 @@ $(document).ready(function(){
 	/* scroll */
     $(window).on('scroll', function(){
         onScroll();
+		var dWidth = $(document).width();
+		if(dWidth<=768){
+			$('header').addClass('fixed');
+		}
     });
 	
 	function onScroll() {
