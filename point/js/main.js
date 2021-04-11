@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var visu_swiper = new Swiper('.main_visual_wrap .swiper-container', {
+		slidesPerView: 1,
 		pagination: {
 			el: '.swiper-pagination',
 		}
