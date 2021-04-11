@@ -13,10 +13,10 @@ $(document).ready(function(){
 	$('.mobile_nav_wrap .gnb_menu_item a').click(function(){
 		$('.mobile_nav_body .sub_menu').slideUp();
 		if(!$(this).parent().hasClass('on')){
-			$(this).siblings('ul').slideDown();
+			$(this).siblings('ul').stop().slideDown();
 			$(this).parent().addClass('on').siblings().removeClass('on');
 		}else{
-			$(this).siblings('ul').slideUp();
+			$(this).siblings('ul').stop().slideUp();
 			$(this).parent().removeClass('on');
 		}
 	});
@@ -26,7 +26,7 @@ $(document).ready(function(){
 	});
 	
 	$('footer .footer_sitemap .footer_sitemap_menu a').click(function(){
-		$(this).siblings('ul').slideToggle();
+		$(this).siblings('ul').stop().slideToggle();
 		$(this).parent().toggleClass('on');
 	});
 	/*======== mobile :: end ==========*/
